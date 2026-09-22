@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,44 +21,72 @@
 
   <link rel="canonical" href="https://manavtaclass.com/">
 
-  <!-- Open Graph -->
+
+  <!-- ================= OPEN GRAPH ================= -->
+
   <meta property="og:type" content="website">
+
   <meta property="og:title" content="ManavtaClass | Learn Better. Perform Better.">
+
   <meta property="og:description"
     content="A structured learning journey for students through live classes, practice, assessment and improvement.">
+
   <meta property="og:url" content="https://manavtaclass.com/">
+
   <meta property="og:site_name" content="ManavtaClass">
+
   <meta property="og:locale" content="en_IN">
 
-  <!-- Replace with your actual social sharing image when available -->
   <meta property="og:image" content="https://manavtaclass.com/assets/og-image.jpg">
+
   <meta property="og:image:alt" content="ManavtaClass - Learn Better. Perform Better.">
 
-  <!-- Twitter -->
+
+  <!-- ================= TWITTER ================= -->
+
   <meta name="twitter:card" content="summary_large_image">
+
   <meta name="twitter:title" content="ManavtaClass | Learn Better. Perform Better.">
+
   <meta name="twitter:description"
     content="A structured learning journey for students through live classes, practice, assessment and improvement.">
+
   <meta name="twitter:image" content="https://manavtaclass.com/assets/og-image.jpg">
 
-  <!-- Favicon -->
+
+  <!-- ================= FAVICON ================= -->
+
   <link rel="icon" href="./assets/logo.png">
 
-  <!-- Stylesheet -->
+
+  <!-- ================= CSS ================= -->
+
   <link rel="stylesheet" href="./style.css">
 
-  <!-- Structured Data -->
+
+  <!-- ================= STRUCTURED DATA ================= -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     "name": "ManavtaClass",
     "url": "https://manavtaclass.com/",
-    "description": "Learning platform providing structured learning support for school students.",
+    "description": "ManavtaClass is a learning platform providing structured learning support for students from Classes 6 to 12.",
     "sameAs": [
       "https://www.facebook.com/profile.php?id=61593986673077",
       "https://www.instagram.com/manavtaclass"
     ]
+  }
+  </script>
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ManavtaClass",
+    "url": "https://manavtaclass.com/"
   }
   </script>
 
@@ -66,14 +95,23 @@
 
 <body>
 
-  <!-- ================= HEADER ================= -->
+
+  <!-- =====================================================
+       HEADER
+  ===================================================== -->
 
   <header class="site-header" id="siteHeader">
 
     <div class="container nav-container">
 
       <a href="./index.html" class="logo" aria-label="ManavtaClass Home">
+
         <img src="./assets/logo.png" alt="ManavtaClass Logo" width="40" height="40">
+
+        <p>
+          Manavta<span>Class</span>
+        </p>
+
       </a>
 
 
@@ -81,11 +119,15 @@
 
       <nav class="desktop-nav" aria-label="Main navigation">
 
+        <a href="./index.html">
+          Home
+        </a>
+
         <a href="#learning">
           Learning
         </a>
 
-        <a href="#classes">
+        <a href="./classes.html">
           Classes
         </a>
 
@@ -94,17 +136,15 @@
         </a>
 
         <a href="./about.html">
-          About
+          About Us
         </a>
 
         <a href="./contact.html">
-          Contact
+          Contact Us
         </a>
 
         <a href="https://manavtaclass.educrypt.ai/" class="dashboard-btn" target="_blank" rel="noopener noreferrer">
-
           Student Dashboard
-
         </a>
 
       </nav>
@@ -114,9 +154,7 @@
 
       <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
         aria-controls="mobileMenu">
-
         ☰
-
       </button>
 
     </div>
@@ -126,11 +164,15 @@
 
     <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
 
+      <a href="./index.html">
+        Home
+      </a>
+
       <a href="#learning">
         Learning
       </a>
 
-      <a href="#classes">
+      <a href="./classes.html">
         Classes
       </a>
 
@@ -139,17 +181,15 @@
       </a>
 
       <a href="./about.html">
-        About
+        About Us
       </a>
 
       <a href="./contact.html">
-        Contact
+        Contact Us
       </a>
 
       <a href="https://manavtaclass.educrypt.ai/" target="_blank" rel="noopener noreferrer">
-
         Student Dashboard
-
       </a>
 
     </nav>
@@ -157,16 +197,45 @@
   </header>
 
 
-  <!-- ================= MAIN ================= -->
+
+  <!-- =====================================================
+       MAIN
+  ===================================================== -->
 
   <main>
 
 
-    <!-- ================= HERO ================= -->
+    <!-- ===================================================
+         BANNER
+    =================================================== -->
+
+    <section class="banner-section">
+
+      <div class="banner-slider">
+
+        <div class="banner-slide">
+
+          <img src="./assets/banners/banner-2.png" alt="ManavtaClass Live Classes">
+
+        </div>
+
+        <div class="banner-slide">
+
+          <img src="./assets/banners/banner-3.png" alt="ManavtaClass Learning Journey">
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         HERO
+    =================================================== -->
 
     <section class="hero">
-
-      <div class="hero-bg"></div>
 
       <div class="container hero-grid">
 
@@ -179,12 +248,10 @@
             Classes 6–12 • CBSE & ICSE
           </div>
 
-
           <h1>
             Learn Better.<br>
             <span>Perform Better.</span>
           </h1>
-
 
           <p class="hero-text">
             A structured learning journey that helps students
@@ -196,17 +263,12 @@
           <div class="hero-actions">
 
             <a href="https://education.manavtaclass.com/" class="btn btn-primary">
-
               Start Learning
-
             </a>
-
 
             <a href="https://play.google.com/store/apps/details?id=com.manavtaclass.myapp" target="_blank"
               rel="noopener noreferrer" class="btn btn-outline">
-
               Download App
-
             </a>
 
           </div>
@@ -307,7 +369,10 @@
     </section>
 
 
-    <!-- ================= LEARNING STRIP ================= -->
+
+    <!-- ===================================================
+         LEARNING STRIP
+    =================================================== -->
 
     <section class="learning-strip">
 
@@ -338,7 +403,10 @@
     </section>
 
 
-    <!-- ================= LEARNING ================= -->
+
+    <!-- ===================================================
+         LEARNING
+    =================================================== -->
 
     <section class="section" id="learning">
 
@@ -437,12 +505,14 @@
     </section>
 
 
-    <!-- ================= CLASSES ================= -->
+
+    <!-- ===================================================
+         CLASSES
+    =================================================== -->
 
     <section class="section section-light" id="classes">
 
       <div class="container">
-
 
         <div class="section-heading reveal">
 
@@ -466,93 +536,51 @@
 
 
           <a href="https://education.manavtaclass.com/" class="class-card reveal">
-
             <span>Class</span>
-
             <strong>6</strong>
-
-            <small>
-              Build strong foundations
-            </small>
-
+            <small>Build strong foundations</small>
           </a>
 
 
           <a href="https://education.manavtaclass.com/" class="class-card reveal">
-
             <span>Class</span>
-
             <strong>7</strong>
-
-            <small>
-              Strengthen concepts
-            </small>
-
+            <small>Strengthen concepts and skills</small>
           </a>
 
 
           <a href="https://education.manavtaclass.com/" class="class-card reveal">
-
             <span>Class</span>
-
             <strong>8</strong>
-
-            <small>
-              Develop deeper understanding
-            </small>
-
+            <small>Learn, practice and improve</small>
           </a>
 
 
           <a href="https://education.manavtaclass.com/" class="class-card reveal">
-
             <span>Class</span>
-
             <strong>9</strong>
-
-            <small>
-              Prepare for academic challenges
-            </small>
-
+            <small>Build strong academic preparation</small>
           </a>
 
 
           <a href="https://education.manavtaclass.com/" class="class-card reveal">
-
             <span>Class</span>
-
             <strong>10</strong>
-
-            <small>
-              Board-focused preparation
-            </small>
-
+            <small>Prepare with confidence</small>
           </a>
 
 
           <a href="https://education.manavtaclass.com/" class="class-card reveal">
-
             <span>Class</span>
-
             <strong>11</strong>
-
-            <small>
-              Build advanced concepts
-            </small>
-
+            <small>Strengthen advanced concepts</small>
           </a>
 
 
           <a href="https://education.manavtaclass.com/" class="class-card reveal">
-
             <span>Class</span>
-
             <strong>12</strong>
-
-            <small>
-              Focused academic preparation
-            </small>
-
+            <small>Prepare for academic success</small>
           </a>
 
 
@@ -563,12 +591,14 @@
     </section>
 
 
-    <!-- ================= FEATURES ================= -->
+
+    <!-- ===================================================
+         FEATURES
+    =================================================== -->
 
     <section class="section">
 
       <div class="container">
-
 
         <div class="section-heading reveal">
 
@@ -738,7 +768,10 @@
     </section>
 
 
-    <!-- ================= REAL LIFE LEARNING ================= -->
+
+    <!-- ===================================================
+         REAL LIFE LEARNING
+    =================================================== -->
 
     <section class="example-section">
 
@@ -783,30 +816,25 @@
 
         <div class="example-steps reveal">
 
-
           <div>
             <span>1</span>
             <strong>Understand</strong>
           </div>
-
 
           <div>
             <span>2</span>
             <strong>Ask Questions</strong>
           </div>
 
-
           <div>
             <span>3</span>
             <strong>Practice</strong>
           </div>
 
-
           <div>
             <span>4</span>
             <strong>Revise</strong>
           </div>
-
 
         </div>
 
@@ -815,7 +843,10 @@
     </section>
 
 
-    <!-- ================= PARENTS ================= -->
+
+    <!-- ===================================================
+         PARENTS
+    =================================================== -->
 
     <section class="parent-section">
 
@@ -838,11 +869,8 @@
             support students more effectively.
           </p>
 
-
           <a href="https://manavtaclass.educrypt.ai/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-
             Open Student Dashboard
-
           </a>
 
         </div>
@@ -921,7 +949,10 @@
     </section>
 
 
-    <!-- ================= APP ================= -->
+
+    <!-- ===================================================
+         APP
+    =================================================== -->
 
     <section class="app-section">
 
@@ -974,9 +1005,9 @@
           <div class="phone-screen">
 
             <div class="phone-logo">
-              <a href="./index.html" class="logo" aria-label="ManavtaClass Home">
-                <img src="./assets/logo.png" alt="ManavtaClass Logo" width="80" height="80">
-              </a>
+
+              <img src="./assets/logo.png" alt="ManavtaClass Logo" width="65" height="65">
+
             </div>
 
             <h3>
@@ -1011,12 +1042,14 @@
     </section>
 
 
-    <!-- ================= ENROLLMENT ================= -->
+
+    <!-- ===================================================
+         ENROLLMENT
+    =================================================== -->
 
     <section class="section" id="enrollment">
 
       <div class="container">
-
 
         <div class="section-heading reveal">
 
@@ -1070,51 +1103,37 @@
 
 
             <a href="https://education.manavtaclass.com/" class="enroll-btn">
-
               Class 6
-
             </a>
 
 
             <a href="https://education.manavtaclass.com/" class="enroll-btn">
-
               Class 7
-
             </a>
 
 
             <a href="https://education.manavtaclass.com/" class="enroll-btn">
-
               Class 8
-
             </a>
 
 
             <a href="https://education.manavtaclass.com/" class="enroll-btn">
-
               Class 9
-
             </a>
 
 
             <a href="https://education.manavtaclass.com/" class="enroll-btn">
-
               Class 10
-
             </a>
 
 
             <a href="https://education.manavtaclass.com/" class="enroll-btn">
-
               Class 11
-
             </a>
 
 
             <a href="https://education.manavtaclass.com/" class="enroll-btn">
-
               Class 12
-
             </a>
 
 
@@ -1122,10 +1141,8 @@
 
 
           <small class="payment-note">
-
             Continue to ManavtaClass enrollment to select your
             class and complete payment.
-
           </small>
 
         </div>
@@ -1135,12 +1152,14 @@
     </section>
 
 
-    <!-- ================= BLOG ================= -->
+
+    <!-- ===================================================
+         BLOG
+    =================================================== -->
 
     <section class="section section-light">
 
       <div class="container">
-
 
         <div class="section-heading reveal">
 
@@ -1231,12 +1250,14 @@
     </section>
 
 
-    <!-- ================= FAQ ================= -->
+
+    <!-- ===================================================
+         FAQ
+    =================================================== -->
 
     <section class="faq-section">
 
       <div class="container">
-
 
         <div class="section-heading reveal">
 
@@ -1390,7 +1411,10 @@
   </main>
 
 
-  <!-- ================= FOOTER ================= -->
+
+  <!-- =====================================================
+       FOOTER
+  ===================================================== -->
 
   <footer class="footer">
 
@@ -1404,9 +1428,9 @@
         <a href="./index.html" class="logo footer-logo" aria-label="ManavtaClass Home">
 
           <span class="logo-mark">
-            <!-- <a href="./index.html" class="logo" aria-label="ManavtaClass Home"> -->
+
             <img src="./assets/logo.png" alt="ManavtaClass Logo" width="40" height="40">
-            <!-- </a> -->
+
           </span>
 
           <span>
@@ -1419,7 +1443,6 @@
         <p>
           Learn Better. Perform Better.
         </p>
-
 
         <p>
           A structured learning platform for students
@@ -1438,7 +1461,7 @@
         </h4>
 
         <a href="./about.html">
-          About
+          About Us
         </a>
 
         <a href="./blogs.html">
@@ -1446,13 +1469,11 @@
         </a>
 
         <a href="./contact.html">
-          Contact
+          Contact Us
         </a>
 
         <a href="https://manavtaclass.educrypt.ai/" target="_blank" rel="noopener noreferrer">
-
           Student Dashboard
-
         </a>
 
       </div>
@@ -1466,25 +1487,16 @@
           Legal
         </h4>
 
-
         <a href="https://manavtaclass.educrypt.ai/privacy-policy" target="_blank" rel="noopener noreferrer">
-
           Privacy Policy
-
         </a>
-
 
         <a href="https://manavtaclass.educrypt.ai/terms&condition" target="_blank" rel="noopener noreferrer">
-
           Terms & Conditions
-
         </a>
 
-
         <a href="https://manavtaclass.educrypt.ai/refund-policy" target="_blank" rel="noopener noreferrer">
-
           Refund / Cancellation Policy
-
         </a>
 
       </div>
@@ -1498,26 +1510,17 @@
           Connect
         </h4>
 
-
         <a href="https://www.facebook.com/profile.php?id=61593986673077" target="_blank" rel="noopener noreferrer">
-
           Facebook
-
         </a>
-
 
         <a href="https://www.instagram.com/manavtaclass" target="_blank" rel="noopener noreferrer">
-
           Instagram
-
         </a>
-
 
         <a href="https://play.google.com/store/apps/details?id=com.manavtaclass.myapp" target="_blank"
           rel="noopener noreferrer">
-
           Google Play
-
         </a>
 
       </div>
@@ -1530,6 +1533,47 @@
     <div class="footer-bottom">
 
       <div class="container">
+
+        <div class="footer-column">
+
+          <h4>
+            Classes
+          </h4>
+
+          <a href="./classes.html">
+            Classes 6–12
+          </a>
+
+          <a href="https://education.manavtaclass.com/">
+            Class 6
+          </a>
+
+          <a href="https://education.manavtaclass.com/">
+            Class 7
+          </a>
+
+          <a href="https://education.manavtaclass.com/">
+            Class 8
+          </a>
+
+          <a href="https://education.manavtaclass.com/">
+            Class 9
+          </a>
+
+          <a href="https://education.manavtaclass.com/">
+            Class 10
+          </a>
+
+          <a href="https://education.manavtaclass.com/">
+            Class 11
+          </a>
+
+          <a href="https://education.manavtaclass.com/">
+            Class 12
+          </a>
+
+        </div>
+
 
         <span>
           © <span id="year"></span> ManavtaClass.
@@ -1547,9 +1591,241 @@
   </footer>
 
 
-  <!-- JavaScript -->
+
+  <!-- =====================================================
+       FIXED APP DOWNLOAD
+  ===================================================== -->
+
+  <div class="fixed-app-download">
+
+    <div class="fixed-app-title">
+      Download ManavtaClass
+    </div>
+
+
+    <!-- Desktop -->
+
+    <a href="https://manavtaclass.educrypt.ai/" class="app-download-btn desktop-btn" target="_blank"
+      rel="noopener noreferrer">
+
+      <span class="download-icon">
+        🖥️
+      </span>
+
+      <span class="download-text">
+
+        <small>
+          OPEN ON
+        </small>
+
+        <strong>
+          Desktop
+        </strong>
+
+      </span>
+
+    </a>
+
+
+    <!-- Mobile / Google Play -->
+
+    <a href="https://play.google.com/store/apps/details?id=com.manavtaclass.myapp" target="_blank"
+      rel="noopener noreferrer" class="app-download-btn mobile-btn">
+
+      <img src="./assets/google-play.png" alt="Get it on Google Play" class="google-play-image">
+
+      <span class="download-text">
+
+        <small>
+          DOWNLOAD FOR
+        </small>
+
+        <strong>
+          Mobile
+        </strong>
+
+      </span>
+
+    </a>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ===================================================== -->
 
   <script src="./script.js"></script>
+
+
+  <!-- =====================================================
+       BASIC FALLBACK SCRIPT
+       For menu, FAQ and reveal animation
+  ===================================================== -->
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      /* ================= MENU ================= */
+
+      const menuToggle =
+        document.getElementById("menuToggle");
+
+      const mobileMenu =
+        document.getElementById("mobileMenu");
+
+      if (menuToggle && mobileMenu) {
+
+        menuToggle.addEventListener("click", function () {
+
+          const isOpen =
+            mobileMenu.classList.toggle("open");
+
+          menuToggle.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+          );
+
+        });
+
+
+        mobileMenu
+          .querySelectorAll("a")
+          .forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+              mobileMenu.classList.remove("open");
+
+              menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+              );
+
+            });
+
+          });
+
+      }
+
+
+      /* ================= FAQ ================= */
+
+      document
+        .querySelectorAll(".faq-question")
+        .forEach(function (question) {
+
+          question.addEventListener("click", function () {
+
+            const item =
+              question.closest(".faq-item");
+
+            const isActive =
+              item.classList.contains("active");
+
+
+            document
+              .querySelectorAll(".faq-item")
+              .forEach(function (otherItem) {
+
+                otherItem.classList.remove("active");
+
+                const otherButton =
+                  otherItem.querySelector(".faq-question");
+
+                if (otherButton) {
+
+                  otherButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                  );
+
+                }
+
+              });
+
+
+            if (!isActive) {
+
+              item.classList.add("active");
+
+              question.setAttribute(
+                "aria-expanded",
+                "true"
+              );
+
+            }
+
+          });
+
+        });
+
+
+      /* ================= REVEAL ================= */
+
+      const revealElements =
+        document.querySelectorAll(".reveal");
+
+
+      if ("IntersectionObserver" in window) {
+
+        const observer =
+          new IntersectionObserver(
+            function (entries) {
+
+              entries.forEach(function (entry) {
+
+                if (entry.isIntersecting) {
+
+                  entry.target.classList.add("visible");
+
+                  observer.unobserve(entry.target);
+
+                }
+
+              });
+
+            },
+            {
+              threshold: 0.12
+            }
+          );
+
+
+        revealElements.forEach(function (element) {
+
+          observer.observe(element);
+
+        });
+
+      } else {
+
+        revealElements.forEach(function (element) {
+
+          element.classList.add("visible");
+
+        });
+
+      }
+
+
+      /* ================= YEAR ================= */
+
+      const year =
+        document.getElementById("year");
+
+      if (year) {
+
+        year.textContent =
+          new Date().getFullYear();
+
+      }
+
+    });
+
+  </script>
 
 </body>
 

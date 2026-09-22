@@ -4,30 +4,6 @@
 
 
 /* ============================================
-   RAZORPAY PAYMENT LINKS
-   REPLACE THESE WITH YOUR EXISTING LINKS
-============================================ */
-
-// const paymentLinks = {
-
-//   6: "PASTE_CLASS_6_RAZORPAY_LINK_HERE",
-
-//   7: "PASTE_CLASS_7_RAZORPAY_LINK_HERE",
-
-//   8: "PASTE_CLASS_8_RAZORPAY_LINK_HERE",
-
-//   9: "PASTE_CLASS_9_RAZORPAY_LINK_HERE",
-
-//   10: "PASTE_CLASS_10_RAZORPAY_LINK_HERE",
-
-//   11: "PASTE_CLASS_11_RAZORPAY_LINK_HERE",
-
-//   12: "PASTE_CLASS_12_RAZORPAY_LINK_HERE"
-
-// };
-
-
-/* ============================================
    MOBILE MENU
 ============================================ */
 
@@ -136,68 +112,7 @@ if (yearElement) {
 }
 
 
-/* ============================================
-   ENROLLMENT
-============================================ */
 
-document.querySelectorAll(".enroll-btn")
-  .forEach(button => {
-
-    button.addEventListener("click", event => {
-
-      event.preventDefault();
-
-      const selectedClass =
-        button.dataset.class;
-
-      const paymentURL =
-        paymentLinks[selectedClass];
-
-
-      /*
-        Prevent accidental clicks before
-        payment links are added.
-      */
-
-      if (
-        !paymentURL ||
-        paymentURL.includes("PASTE_CLASS")
-      ) {
-
-        alert(
-          `Payment link for Class ${selectedClass} has not been configured yet.`
-        );
-
-        return;
-
-      }
-
-
-      /* Analytics event */
-
-      if (typeof gtag === "function") {
-
-        gtag(
-          "event",
-          "begin_checkout",
-          {
-            class_selected: selectedClass,
-            value: 29,
-            currency: "INR"
-          }
-        );
-
-      }
-
-
-      /* Redirect */
-
-      window.location.href =
-        paymentURL;
-
-    });
-
-  });
 
 
 /* ============================================
