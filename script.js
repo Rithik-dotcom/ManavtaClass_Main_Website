@@ -1,48 +1,58 @@
-/* =========================================================
+/* =====================================================
    MANAVTACLASS JAVASCRIPT
-   ========================================================= */
+===================================================== */
 
 
-/* ================= HEADER ================= */
+/* ============================================
+   RAZORPAY PAYMENT LINKS
+   REPLACE THESE WITH YOUR EXISTING LINKS
+============================================ */
 
-const header = document.getElementById("siteHeader");
+// const paymentLinks = {
 
-window.addEventListener("scroll", () => {
+//   6: "PASTE_CLASS_6_RAZORPAY_LINK_HERE",
 
-  if (!header) return;
+//   7: "PASTE_CLASS_7_RAZORPAY_LINK_HERE",
 
-  if (window.scrollY > 20) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
+//   8: "PASTE_CLASS_8_RAZORPAY_LINK_HERE",
 
-});
+//   9: "PASTE_CLASS_9_RAZORPAY_LINK_HERE",
 
+//   10: "PASTE_CLASS_10_RAZORPAY_LINK_HERE",
 
-/* ================= MOBILE MENU ================= */
+//   11: "PASTE_CLASS_11_RAZORPAY_LINK_HERE",
 
-const mobileMenuBtn =
-  document.getElementById("mobileMenuBtn");
+//   12: "PASTE_CLASS_12_RAZORPAY_LINK_HERE"
 
-const mobileNav =
-  document.getElementById("mobileNav");
+// };
 
 
-if (mobileMenuBtn && mobileNav) {
+/* ============================================
+   MOBILE MENU
+============================================ */
 
-  mobileMenuBtn.addEventListener("click", () => {
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
 
-    mobileNav.classList.toggle("active");
+if (menuToggle && mobileMenu) {
 
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("open");
+
+    menuToggle.textContent =
+      mobileMenu.classList.contains("open")
+        ? "×"
+        : "☰";
   });
 
 
-  mobileNav.querySelectorAll("a").forEach(link => {
+  mobileMenu.querySelectorAll("a").forEach(link => {
 
     link.addEventListener("click", () => {
 
-      mobileNav.classList.remove("active");
+      mobileMenu.classList.remove("open");
+
+      menuToggle.textContent = "☰";
 
     });
 
@@ -51,62 +61,40 @@ if (mobileMenuBtn && mobileNav) {
 }
 
 
-/* ================= FAQ ================= */
+/* ============================================
+   FAQ
+============================================ */
 
-const faqItems =
-  document.querySelectorAll(".faq-item");
+document.querySelectorAll(".faq-question").forEach(button => {
 
+  button.addEventListener("click", () => {
 
-faqItems.forEach(item => {
+    const item = button.parentElement;
 
-  const question =
-    item.querySelector(".faq-question");
+    document.querySelectorAll(".faq-item").forEach(other => {
 
-  const answer =
-    item.querySelector(".faq-answer");
-
-
-  question.addEventListener("click", () => {
-
-    const isActive =
-      item.classList.contains("active");
-
-
-    faqItems.forEach(otherItem => {
-
-      otherItem.classList.remove("active");
-
-      const otherAnswer =
-        otherItem.querySelector(".faq-answer");
-
-      otherAnswer.style.maxHeight = null;
+      if (other !== item) {
+        other.classList.remove("active");
+      }
 
     });
 
-
-    if (!isActive) {
-
-      item.classList.add("active");
-
-      answer.style.maxHeight =
-        answer.scrollHeight + "px";
-
-    }
+    item.classList.toggle("active");
 
   });
 
 });
 
 
-/* ================= SCROLL REVEAL ================= */
+/* ============================================
+   SCROLL REVEAL
+============================================ */
 
 const revealElements =
   document.querySelectorAll(".reveal");
 
-
-const revealObserver =
+const observer =
   new IntersectionObserver(
-
     entries => {
 
       entries.forEach(entry => {
@@ -115,92 +103,152 @@ const revealObserver =
 
           entry.target.classList.add("visible");
 
-          revealObserver.unobserve(
-            entry.target
-          );
+          observer.unobserve(entry.target);
 
         }
 
       });
 
     },
-
     {
       threshold: 0.12
     }
-
   );
 
 
 revealElements.forEach(element => {
-
-  revealObserver.observe(element);
-
+  observer.observe(element);
 });
 
 
-/* ================= CURRENT YEAR ================= */
+/* ============================================
+   YEAR
+============================================ */
 
-const currentYear =
-  document.getElementById("currentYear");
+const yearElement =
+  document.getElementById("year");
 
+if (yearElement) {
 
-if (currentYear) {
-
-  currentYear.textContent =
+  yearElement.textContent =
     new Date().getFullYear();
 
 }
 
 
-/* ================= SMOOTH INTERNAL LINKS ================= */
+/* ============================================
+   ENROLLMENT
+============================================ */
+
+document.querySelectorAll(".enroll-btn")
+  .forEach(button => {
+
+    button.addEventListener("click", event => {
+
+      event.preventDefault();
+
+      const selectedClass =
+        button.dataset.class;
+
+      const paymentURL =
+        paymentLinks[selectedClass];
+
+
+      /*
+        Prevent accidental clicks before
+        payment links are added.
+      */
+
+      if (
+        !paymentURL ||
+        paymentURL.includes("PASTE_CLASS")
+      ) {
+
+        alert(
+          `Payment link for Class ${selectedClass} has not been configured yet.`
+        );
+
+        return;
+
+      }
+
+
+      /* Analytics event */
+
+      if (typeof gtag === "function") {
+
+        gtag(
+          "event",
+          "begin_checkout",
+          {
+            class_selected: selectedClass,
+            value: 29,
+            currency: "INR"
+          }
+        );
+
+      }
+
+
+      /* Redirect */
+
+      window.location.href =
+        paymentURL;
+
+    });
+
+  });
+
+
+/* ============================================
+   GOOGLE ANALYTICS PLACEHOLDER
+============================================ */
+
+/*
+  Add your Google Analytics measurement code
+  in the <head> of your pages when ready.
+
+  Example:
+
+  G-XXXXXXXXXX
+
+  Do NOT paste the example ID.
+*/
+
+
+/* ============================================
+   SMOOTH INTERNAL LINKS
+============================================ */
 
 document.querySelectorAll(
   'a[href^="#"]'
-).forEach(link => {
+).forEach(anchor => {
 
-  link.addEventListener("click", function (event) {
-
-    const targetId =
-      this.getAttribute("href");
-
-    if (!targetId || targetId === "#") {
-      return;
-    }
+  anchor.addEventListener("click", function (event) {
 
     const target =
-      document.querySelector(targetId);
+      document.querySelector(
+        this.getAttribute("href")
+      );
 
-    if (!target) {
-      return;
+    if (target) {
+
+      event.preventDefault();
+
+      target.scrollIntoView({
+        behavior: "smooth"
+      });
+
     }
-
-    event.preventDefault();
-
-    const headerHeight =
-      document.querySelector(".site-header")
-        ?.offsetHeight || 0;
-
-    const targetPosition =
-      target.getBoundingClientRect().top +
-      window.scrollY -
-      headerHeight -
-      15;
-
-    window.scrollTo({
-
-      top: targetPosition,
-
-      behavior: "smooth"
-
-    });
 
   });
 
 });
 
 
-/* ================= EXTERNAL LINKS ================= */
+/* ============================================
+   EXTERNAL LINKS
+============================================ */
 
 document.querySelectorAll(
   'a[target="_blank"]'

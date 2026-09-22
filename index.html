@@ -6,83 +6,64 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>ManavtaClass | Learn Better. Perform Better.</title>
+
   <meta name="description"
-    content="ManavtaClass offers live online classes, live quizzes, AI-based learning, monitoring reports, syllabus preparation and Olympiad preparation for students from Classes 6 to 12.">
+    content="ManavtaClass helps students in Classes 6 to 12 learn through live classes, quizzes, AI-based learning, progress monitoring, syllabus preparation, Olympiad preparation and recorded revision.">
 
   <meta name="keywords"
-    content="ManavtaClass, online classes, Class 6 online classes, Class 7 online classes, Class 8 online classes, Class 9 online classes, Class 10 online classes, Class 11 online classes, Class 12 online classes, CBSE, ICSE, live classes, Olympiad preparation">
+    content="ManavtaClass, online classes, CBSE classes, ICSE classes, Class 6, Class 7, Class 8, Class 9, Class 10, Class 11, Class 12, live classes, online learning, Olympiad preparation">
 
   <meta name="author" content="ManavtaClass">
 
   <meta name="robots" content="index, follow">
 
-  <meta name="theme-color" content="#1261d6">
-
   <link rel="canonical" href="https://manavtaclass.com/">
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="ManavtaClass | Learn Better. Perform Better.">
   <meta property="og:description"
-    content="Live classes, quizzes, AI-based learning, monitoring reports and Olympiad preparation for Classes 6 to 12.">
+    content="A structured learning journey for students through live classes, practice, assessment and improvement.">
   <meta property="og:url" content="https://manavtaclass.com/">
   <meta property="og:site_name" content="ManavtaClass">
+  <meta property="og:locale" content="en_IN">
 
+  <!-- Replace with your actual social sharing image when available -->
+  <meta property="og:image" content="https://manavtaclass.com/assets/og-image.jpg">
+  <meta property="og:image:alt" content="ManavtaClass - Learn Better. Perform Better.">
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ManavtaClass | Learn Better. Perform Better.">
-  <meta name="twitter:description" content="A structured learning journey for students from Classes 6 to 12.">
+  <meta name="twitter:description"
+    content="A structured learning journey for students through live classes, practice, assessment and improvement.">
+  <meta name="twitter:image" content="https://manavtaclass.com/assets/og-image.jpg">
 
-  <title>ManavtaClass | Online Classes for Classes 6–12</title>
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230b63ce'/%3E%3Ctext x='50' y='67' font-size='55' text-anchor='middle' fill='white'%3EM%3C/text%3E%3C/svg%3E">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Organization Schema -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "ManavtaClass",
-        "url": "https://manavtaclass.com/",
-        "sameAs": [
-            "https://www.facebook.com/profile.php?id=61593986673077",
-            "https://www.instagram.com/manavtaclass"
-        ]
-    }
-    </script>
-
-  <!-- Website Schema -->
-  <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "ManavtaClass",
-        "url": "https://manavtaclass.com/"
-    }
-    </script>
-
-  <!-- Educational App Schema -->
-  <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "ManavtaClass",
-        "applicationCategory": "EducationalApplication",
-        "operatingSystem": "Android",
-        "description": "ManavtaClass educational app for structured learning, classes, quizzes and student learning support.",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "INR"
-        },
-        "url": "https://play.google.com/store/apps/details?id=cccom.manavtaclass.myapp"
-    }
-    </script>
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "ManavtaClass",
+    "url": "https://manavtaclass.com/",
+    "description": "Learning platform providing structured learning support for school students.",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61593986673077",
+      "https://www.instagram.com/manavtaclass"
+    ]
+  }
+  </script>
 
 </head>
+
 
 <body>
 
@@ -92,118 +73,166 @@
 
     <div class="container nav-container">
 
-      <a href="index.html" class="logo">
-        <span class="logo-mark">M</span>
-
-        <span>
-          <strong>Manavta</strong><span>Class</span>
-        </span>
+      <a href="./index.html" class="logo" aria-label="ManavtaClass Home">
+        <img src="./assets/logo.png" alt="ManavtaClass Logo" width="40" height="40">
       </a>
 
-      <nav class="desktop-nav">
 
-        <a href="#home">Home</a>
-        <a href="#classes">Classes</a>
-        <a href="#learning">Learning</a>
-        <a href="#features">Features</a>
-        <a href="blogs.html">Blogs</a>
+      <!-- Desktop Navigation -->
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+
+        <a href="#learning">
+          Learning
+        </a>
+
+        <a href="#classes">
+          Classes
+        </a>
+
+        <a href="./blogs.html">
+          Blogs
+        </a>
+
+        <a href="./about.html">
+          About
+        </a>
+
+        <a href="./contact.html">
+          Contact
+        </a>
 
         <a href="https://manavtaclass.educrypt.ai/" class="dashboard-btn" target="_blank" rel="noopener noreferrer">
+
           Student Dashboard
+
         </a>
 
       </nav>
 
-      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu">
 
-        <span></span>
-        <span></span>
-        <span></span>
+      <!-- Mobile Menu Button -->
+
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="mobileMenu">
+
+        ☰
 
       </button>
 
     </div>
 
-    <div class="mobile-nav" id="mobileNav">
 
-      <a href="#home">Home</a>
-      <a href="#classes">Classes</a>
-      <a href="#learning">Learning</a>
-      <a href="#features">Features</a>
-      <a href="blogs.html">Blogs</a>
+    <!-- Mobile Navigation -->
 
-      <a href="https://manavtaclass.educrypt.ai/" target="_blank" rel="noopener noreferrer" class="mobile-dashboard">
-        Student Dashboard
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+
+      <a href="#learning">
+        Learning
       </a>
 
-    </div>
+      <a href="#classes">
+        Classes
+      </a>
+
+      <a href="./blogs.html">
+        Blogs
+      </a>
+
+      <a href="./about.html">
+        About
+      </a>
+
+      <a href="./contact.html">
+        Contact
+      </a>
+
+      <a href="https://manavtaclass.educrypt.ai/" target="_blank" rel="noopener noreferrer">
+
+        Student Dashboard
+
+      </a>
+
+    </nav>
 
   </header>
 
 
-  <!-- ================= HERO ================= -->
+  <!-- ================= MAIN ================= -->
 
   <main>
 
-    <section class="hero" id="home">
 
-      <div class="hero-background"></div>
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+      <div class="hero-bg"></div>
 
       <div class="container hero-grid">
+
+
+        <!-- Hero Content -->
 
         <div class="hero-content reveal">
 
           <div class="eyebrow">
-            <span class="eyebrow-dot"></span>
-            Structured Learning for Classes 6–12
+            Classes 6–12 • CBSE & ICSE
           </div>
 
+
           <h1>
-            Learn Better.
+            Learn Better.<br>
             <span>Perform Better.</span>
           </h1>
 
-          <p class="hero-description">
-            ManavtaClass brings live classes, practice, assessment,
-            AI-assisted learning and performance monitoring together
-            to create a structured learning journey for students.
+
+          <p class="hero-text">
+            A structured learning journey that helps students
+            understand concepts, practise regularly, assess progress
+            and continuously improve.
           </p>
+
 
           <div class="hero-actions">
 
-            <a href="#classes" class="btn btn-primary">
-              Explore Classes
-              <span>→</span>
+            <a href="https://education.manavtaclass.com/" class="btn btn-primary">
+
+              Start Learning
+
             </a>
 
-            <a href="https://play.google.com/store/apps/details?id=cccom.manavtaclass.myapp" target="_blank"
-              rel="noopener noreferrer" class="btn btn-secondary">
+
+            <a href="https://play.google.com/store/apps/details?id=com.manavtaclass.myapp" target="_blank"
+              rel="noopener noreferrer" class="btn btn-outline">
+
               Download App
+
             </a>
 
           </div>
 
-          <div class="hero-trust">
 
-            <div>
-              <strong>6–12</strong>
-              <span>Classes</span>
-            </div>
+          <div class="hero-points">
 
-            <div>
-              <strong>Live</strong>
-              <span>Learning</span>
-            </div>
+            <span>
+              ✓ Live Classes
+            </span>
 
-            <div>
-              <strong>AI</strong>
-              <span>Assistance</span>
-            </div>
+            <span>
+              ✓ Live Quizzes
+            </span>
+
+            <span>
+              ✓ Progress Monitoring
+            </span>
 
           </div>
 
         </div>
 
+
+        <!-- Hero Visual -->
 
         <div class="hero-visual reveal">
 
@@ -211,69 +240,62 @@
 
             <div class="dashboard-top">
 
+              <span>
+                Student Progress
+              </span>
+
+              <span class="status-dot">
+                ●
+              </span>
+
+            </div>
+
+
+            <div class="progress-circle">
+
               <div>
-                <span class="small-label">
-                  STUDENT LEARNING
-                </span>
 
-                <h3>
-                  Your Learning Journey
-                </h3>
-              </div>
+                <strong>
+                  82%
+                </strong>
 
-              <div class="dashboard-avatar">
-                M
-              </div>
+                <small>
+                  Progress
+                </small>
 
-            </div>
-
-
-            <div class="progress-card">
-
-              <div class="progress-info">
-                <span>Learning Progress</span>
-                <strong>82%</strong>
-              </div>
-
-              <div class="progress-bar">
-                <span style="width:82%"></span>
               </div>
 
             </div>
 
 
-            <div class="mini-cards">
+            <div class="subject-list">
 
-              <div class="mini-card">
-                <div class="mini-icon">▶</div>
-                <strong>Live Classes</strong>
-                <small>Learn</small>
+              <div>
+                <span>Mathematics</span>
+                <strong>88%</strong>
               </div>
 
-              <div class="mini-card">
-                <div class="mini-icon">✓</div>
-                <strong>Quizzes</strong>
-                <small>Practice</small>
+              <div>
+                <span>Science</span>
+                <strong>81%</strong>
               </div>
 
-              <div class="mini-card">
-                <div class="mini-icon">↗</div>
-                <strong>Reports</strong>
-                <small>Improve</small>
+              <div>
+                <span>English</span>
+                <strong>84%</strong>
               </div>
 
             </div>
 
 
-            <div class="learning-cycle-mini">
+            <div class="mini-chart">
 
-              <span>Learn</span>
-              <i>→</i>
-              <span>Practice</span>
-              <i>→</i>
-              <span>Assess</span>
-              <i>→</i>
-              <span>Improve</span>
+              <span style="height:35%"></span>
+              <span style="height:50%"></span>
+              <span style="height:45%"></span>
+              <span style="height:65%"></span>
+              <span style="height:75%"></span>
+              <span style="height:90%"></span>
 
             </div>
 
@@ -286,42 +308,30 @@
     </section>
 
 
-    <!-- ================= VALUE STRIP ================= -->
+    <!-- ================= LEARNING STRIP ================= -->
 
-    <section class="value-strip">
+    <section class="learning-strip">
 
-      <div class="container value-grid">
+      <div class="container learning-strip-grid">
 
         <div>
-          <span class="value-icon">01</span>
-          <div>
-            <strong>Learn</strong>
-            <p>Build strong concepts</p>
-          </div>
+          <strong>01</strong>
+          <span>Learn</span>
         </div>
 
         <div>
-          <span class="value-icon">02</span>
-          <div>
-            <strong>Practice</strong>
-            <p>Apply what you learn</p>
-          </div>
+          <strong>02</strong>
+          <span>Practice</span>
         </div>
 
         <div>
-          <span class="value-icon">03</span>
-          <div>
-            <strong>Assess</strong>
-            <p>Measure understanding</p>
-          </div>
+          <strong>03</strong>
+          <span>Assess</span>
         </div>
 
         <div>
-          <span class="value-icon">04</span>
-          <div>
-            <strong>Improve</strong>
-            <p>Work on weak areas</p>
-          </div>
+          <strong>04</strong>
+          <span>Improve</span>
         </div>
 
       </div>
@@ -329,38 +339,97 @@
     </section>
 
 
-    <!-- ================= ABOUT ================= -->
+    <!-- ================= LEARNING ================= -->
 
-    <section class="section about-section">
+    <section class="section" id="learning">
 
-      <div class="container two-column">
+      <div class="container">
 
         <div class="section-heading reveal">
 
-          <span class="section-tag">
-            WHY MANAVTACLASS
+          <span class="section-label">
+            HOW IT WORKS
           </span>
 
           <h2>
-            Learning should be a
-            <span>process, not pressure.</span>
+            Learning should be a process,<br>
+            not just a collection of classes.
           </h2>
+
+          <p>
+            ManavtaClass connects teaching, practice, assessment
+            and improvement into one continuous learning cycle.
+          </p>
 
         </div>
 
-        <div class="about-text reveal">
 
-          <p>
-            Students do not improve simply by attending more classes.
-            They need to understand concepts, practice them, assess
-            their understanding and work on areas where they can improve.
-          </p>
+        <div class="learning-grid">
 
-          <p>
-            ManavtaClass brings these steps together into one structured
-            learning journey supported by teachers, assessments,
-            technology and performance insights.
-          </p>
+
+          <article class="learning-card reveal">
+
+            <span>01</span>
+
+            <h3>
+              Learn
+            </h3>
+
+            <p>
+              Understand concepts through structured teaching
+              and interactive live classes.
+            </p>
+
+          </article>
+
+
+          <article class="learning-card reveal">
+
+            <span>02</span>
+
+            <h3>
+              Practice
+            </h3>
+
+            <p>
+              Strengthen understanding through questions,
+              exercises and regular practice.
+            </p>
+
+          </article>
+
+
+          <article class="learning-card reveal">
+
+            <span>03</span>
+
+            <h3>
+              Assess
+            </h3>
+
+            <p>
+              Use quizzes and assessments to identify
+              strengths and learning gaps.
+            </p>
+
+          </article>
+
+
+          <article class="learning-card reveal">
+
+            <span>04</span>
+
+            <h3>
+              Improve
+            </h3>
+
+            <p>
+              Use feedback and revision to improve
+              performance continuously.
+            </p>
+
+          </article>
+
 
         </div>
 
@@ -371,169 +440,122 @@
 
     <!-- ================= CLASSES ================= -->
 
-    <section class="section classes-section" id="classes">
+    <section class="section section-light" id="classes">
 
       <div class="container">
 
-        <div class="section-header center reveal">
 
-          <span class="section-tag">
+        <div class="section-heading reveal">
+
+          <span class="section-label">
             CLASSES
           </span>
 
           <h2>
-            Choose your
-            <span>learning journey.</span>
+            A structured pathway for every stage.
           </h2>
 
           <p>
-            Structured academic support for students from Classes 6 to 12.
+            Designed for school students with support
+            for CBSE and ICSE learning.
           </p>
 
         </div>
 
 
-        <div class="classes-grid">
+        <div class="class-grid">
 
-          <a href="#enroll" class="class-card reveal">
-            <span>06</span>
-            <h3>Class 6</h3>
-            <p>Build strong academic foundations.</p>
-            <strong>Explore →</strong>
+
+          <a href="https://education.manavtaclass.com/" class="class-card reveal">
+
+            <span>Class</span>
+
+            <strong>6</strong>
+
+            <small>
+              Build strong foundations
+            </small>
+
           </a>
 
-          <a href="#enroll" class="class-card reveal">
-            <span>07</span>
-            <h3>Class 7</h3>
-            <p>Strengthen concepts and study habits.</p>
-            <strong>Explore →</strong>
+
+          <a href="https://education.manavtaclass.com/" class="class-card reveal">
+
+            <span>Class</span>
+
+            <strong>7</strong>
+
+            <small>
+              Strengthen concepts
+            </small>
+
           </a>
 
-          <a href="#enroll" class="class-card reveal">
-            <span>08</span>
-            <h3>Class 8</h3>
-            <p>Connect concepts with application.</p>
-            <strong>Explore →</strong>
+
+          <a href="https://education.manavtaclass.com/" class="class-card reveal">
+
+            <span>Class</span>
+
+            <strong>8</strong>
+
+            <small>
+              Develop deeper understanding
+            </small>
+
           </a>
 
-          <a href="#enroll" class="class-card reveal">
-            <span>09</span>
-            <h3>Class 9</h3>
-            <p>Prepare for deeper academic learning.</p>
-            <strong>Explore →</strong>
+
+          <a href="https://education.manavtaclass.com/" class="class-card reveal">
+
+            <span>Class</span>
+
+            <strong>9</strong>
+
+            <small>
+              Prepare for academic challenges
+            </small>
+
           </a>
 
-          <a href="#enroll" class="class-card reveal">
-            <span>10</span>
-            <h3>Class 10</h3>
-            <p>Build confidence for board preparation.</p>
-            <strong>Explore →</strong>
+
+          <a href="https://education.manavtaclass.com/" class="class-card reveal">
+
+            <span>Class</span>
+
+            <strong>10</strong>
+
+            <small>
+              Board-focused preparation
+            </small>
+
           </a>
 
-          <a href="#enroll" class="class-card reveal">
-            <span>11</span>
-            <h3>Class 11</h3>
-            <p>Develop subject depth and consistency.</p>
-            <strong>Explore →</strong>
+
+          <a href="https://education.manavtaclass.com/" class="class-card reveal">
+
+            <span>Class</span>
+
+            <strong>11</strong>
+
+            <small>
+              Build advanced concepts
+            </small>
+
           </a>
 
-          <a href="#enroll" class="class-card reveal">
-            <span>12</span>
-            <h3>Class 12</h3>
-            <p>Focused preparation for the next step.</p>
-            <strong>Explore →</strong>
+
+          <a href="https://education.manavtaclass.com/" class="class-card reveal">
+
+            <span>Class</span>
+
+            <strong>12</strong>
+
+            <small>
+              Focused academic preparation
+            </small>
+
           </a>
 
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= LEARNING SYSTEM ================= -->
-
-    <section class="section learning-section" id="learning">
-
-      <div class="container">
-
-        <div class="section-header center reveal">
-
-          <span class="section-tag">
-            THE MANAVTACLASS METHOD
-          </span>
-
-          <h2>
-            From understanding
-            <span>to improvement.</span>
-          </h2>
-
-          <p>
-            A simple cycle that helps students turn learning into action.
-          </p>
-
-        </div>
-
-
-        <div class="learning-cycle">
-
-          <div class="cycle-step reveal">
-
-            <div class="cycle-number">01</div>
-
-            <h3>Learn</h3>
-
-            <p>
-              Understand concepts through structured teacher-led
-              learning.
-            </p>
-
-          </div>
-
-          <div class="cycle-arrow">→</div>
-
-          <div class="cycle-step reveal">
-
-            <div class="cycle-number">02</div>
-
-            <h3>Practice</h3>
-
-            <p>
-              Solve questions and apply concepts instead of
-              only reading them.
-            </p>
-
-          </div>
-
-          <div class="cycle-arrow">→</div>
-
-          <div class="cycle-step reveal">
-
-            <div class="cycle-number">03</div>
-
-            <h3>Assess</h3>
-
-            <p>
-              Use quizzes and assessments to understand
-              actual performance.
-            </p>
-
-          </div>
-
-          <div class="cycle-arrow">→</div>
-
-          <div class="cycle-step reveal">
-
-            <div class="cycle-number">04</div>
-
-            <h3>Improve</h3>
-
-            <p>
-              Identify gaps and focus on areas that need
-              more attention.
-            </p>
-
-          </div>
 
         </div>
 
@@ -544,261 +566,354 @@
 
     <!-- ================= FEATURES ================= -->
 
-    <section class="section features-section" id="features">
+    <section class="section">
 
       <div class="container">
-
-        <div class="section-header center reveal">
-
-          <span class="section-tag">
-            EVERYTHING A STUDENT NEEDS
-          </span>
-
-          <h2>
-            More than just
-            <span>online classes.</span>
-          </h2>
-
-        </div>
-
-
-        <div class="features-grid">
-
-          <article class="feature-card reveal">
-
-            <div class="feature-icon">▶</div>
-
-            <h3>Live Classes</h3>
-
-            <p>
-              Teacher-led live learning where students can
-              understand concepts and ask questions.
-            </p>
-
-          </article>
-
-
-          <article class="feature-card reveal">
-
-            <div class="feature-icon">✓</div>
-
-            <h3>Live Quizzes</h3>
-
-            <p>
-              Test understanding while learning and turn
-              classroom knowledge into practice.
-            </p>
-
-          </article>
-
-
-          <article class="feature-card reveal">
-
-            <div class="feature-icon">AI</div>
-
-            <h3>AI-Based Learning</h3>
-
-            <p>
-              Technology-assisted learning designed to help
-              students practise and understand better.
-            </p>
-
-          </article>
-
-
-          <article class="feature-card reveal">
-
-            <div class="feature-icon">↗</div>
-
-            <h3>Monitoring Reports</h3>
-
-            <p>
-              Track learning activity, assessments and
-              performance to understand progress.
-            </p>
-
-          </article>
-
-
-          <article class="feature-card reveal">
-
-            <div class="feature-icon">◎</div>
-
-            <h3>Syllabus Preparation</h3>
-
-            <p>
-              Follow a structured academic pathway instead
-              of studying without direction.
-            </p>
-
-          </article>
-
-
-          <article class="feature-card reveal">
-
-            <div class="feature-icon">★</div>
-
-            <h3>Olympiad Preparation</h3>
-
-            <p>
-              Develop problem-solving ability through
-              additional practice and preparation.
-            </p>
-
-          </article>
-
-
-          <article class="feature-card reveal">
-
-            <div class="feature-icon">Aa</div>
-
-            <h3>Cursive Reading & Writing</h3>
-
-            <p>
-              Support foundational reading and writing
-              development alongside academics.
-            </p>
-
-          </article>
-
-
-          <article class="feature-card reveal">
-
-            <div class="feature-icon">↺</div>
-
-            <h3>Recorded Revision</h3>
-
-            <p>
-              Revisit lessons when students need another
-              explanation or revision.
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= REAL LIFE EXAMPLE ================= -->
-
-    <section class="section example-section">
-
-      <div class="container example-box reveal">
-
-        <div>
-
-          <span class="section-tag">
-            LEARNING IN REAL LIFE
-          </span>
-
-          <h2>
-            Don't just remember.
-            <span>Learn to apply.</span>
-          </h2>
-
-        </div>
-
-        <div class="example-content">
-
-          <p>
-            Imagine a student learns fractions in Class 6.
-            Instead of stopping after the lesson, the student
-            practices questions, takes a quiz and revisits the
-            recorded class if a concept is unclear.
-          </p>
-
-          <p>
-            Later, the same mathematical thinking becomes useful
-            when learning ratios, percentages and other concepts.
-            This is how learning becomes connected rather than
-            isolated chapters.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= PARENT MONITORING ================= -->
-
-    <section class="section parent-section">
-
-      <div class="container two-column">
-
-        <div class="parent-dashboard reveal">
-
-          <div class="parent-header">
-
-            <div>
-              <small>PARENT REPORT</small>
-              <h3>Learning Overview</h3>
-            </div>
-
-            <span class="status-dot"></span>
-
-          </div>
-
-          <div class="report-row">
-
-            <span>Classes</span>
-
-            <strong>24</strong>
-
-          </div>
-
-          <div class="report-row">
-
-            <span>Quizzes</span>
-
-            <strong>18</strong>
-
-          </div>
-
-          <div class="report-row">
-
-            <span>Practice</span>
-
-            <strong>86%</strong>
-
-          </div>
-
-          <div class="report-row">
-
-            <span>Progress</span>
-
-            <strong>82%</strong>
-
-          </div>
-
-        </div>
 
 
         <div class="section-heading reveal">
 
-          <span class="section-tag">
+          <span class="section-label">
+            WHAT STUDENTS GET
+          </span>
+
+          <h2>
+            Everything a student needs
+            to keep progressing.
+          </h2>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+
+          <article class="feature-card reveal">
+
+            <div class="feature-icon">
+              ▶
+            </div>
+
+            <h3>
+              Live Classes
+            </h3>
+
+            <p>
+              Learn directly with teachers and ask questions
+              while concepts are being taught.
+            </p>
+
+          </article>
+
+
+          <article class="feature-card reveal">
+
+            <div class="feature-icon">
+              ?
+            </div>
+
+            <h3>
+              Live Quizzes
+            </h3>
+
+            <p>
+              Check understanding during the learning journey
+              instead of waiting until the end.
+            </p>
+
+          </article>
+
+
+          <article class="feature-card reveal">
+
+            <div class="feature-icon">
+              AI
+            </div>
+
+            <h3>
+              AI-Based Learning
+            </h3>
+
+            <p>
+              Technology-supported learning experiences
+              to help students practise and improve.
+            </p>
+
+          </article>
+
+
+          <article class="feature-card reveal">
+
+            <div class="feature-icon">
+              ↗
+            </div>
+
+            <h3>
+              Monitoring Reports
+            </h3>
+
+            <p>
+              Parents can understand learning activity,
+              performance and progress.
+            </p>
+
+          </article>
+
+
+          <article class="feature-card reveal">
+
+            <div class="feature-icon">
+              ✓
+            </div>
+
+            <h3>
+              Syllabus Preparation
+            </h3>
+
+            <p>
+              Structured preparation aligned with the
+              student's academic requirements.
+            </p>
+
+          </article>
+
+
+          <article class="feature-card reveal">
+
+            <div class="feature-icon">
+              ★
+            </div>
+
+            <h3>
+              Olympiad Preparation
+            </h3>
+
+            <p>
+              Additional practice to encourage problem-solving
+              and competitive learning.
+            </p>
+
+          </article>
+
+
+          <article class="feature-card reveal">
+
+            <div class="feature-icon">
+              A
+            </div>
+
+            <h3>
+              Cursive Reading & Writing
+            </h3>
+
+            <p>
+              Activities designed to support foundational
+              reading and writing development.
+            </p>
+
+          </article>
+
+
+          <article class="feature-card reveal">
+
+            <div class="feature-icon">
+              ↻
+            </div>
+
+            <h3>
+              Recorded Revision
+            </h3>
+
+            <p>
+              Revisit previously taught concepts and questions
+              for better retention.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= REAL LIFE LEARNING ================= -->
+
+    <section class="example-section">
+
+      <div class="container example-grid">
+
+
+        <div class="example-content reveal">
+
+          <span class="section-label">
+            REAL-LIFE LEARNING
+          </span>
+
+          <h2>
+            Learning becomes stronger
+            when students connect ideas.
+          </h2>
+
+          <p>
+            Suppose a student learned fractions in Class 6.
+            In the next class, the same understanding can be
+            applied to ratios, percentages and everyday calculations.
+          </p>
+
+
+          <div class="example-box">
+
+            <strong>
+              Example
+            </strong>
+
+            <p>
+              A student learns a concept in a live class,
+              asks questions, attempts practice questions,
+              takes a quiz and later revisits the recorded class
+              when revision is needed.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="example-steps reveal">
+
+
+          <div>
+            <span>1</span>
+            <strong>Understand</strong>
+          </div>
+
+
+          <div>
+            <span>2</span>
+            <strong>Ask Questions</strong>
+          </div>
+
+
+          <div>
+            <span>3</span>
+            <strong>Practice</strong>
+          </div>
+
+
+          <div>
+            <span>4</span>
+            <strong>Revise</strong>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PARENTS ================= -->
+
+    <section class="parent-section">
+
+      <div class="container parent-grid">
+
+
+        <div class="parent-content reveal">
+
+          <span class="section-label">
             FOR PARENTS
           </span>
 
           <h2>
-            Understand the
-            <span>learning journey.</span>
+            Know how your child is learning.
           </h2>
 
           <p>
-            Parents need more than marks. Understanding
-            attendance, practice, assessments and learning
-            progress can help create better conversations
-            around education.
+            Education is not only about marks. Understanding
+            learning activity, practice and progress helps parents
+            support students more effectively.
           </p>
 
-          <a href="https://manavtaclass.educrypt.ai/" target="_blank" rel="noopener noreferrer" class="text-link">
-            Access Student Dashboard →
+
+          <a href="https://manavtaclass.educrypt.ai/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+
+            Open Student Dashboard
+
           </a>
+
+        </div>
+
+
+        <div class="report-card reveal">
+
+          <div class="report-header">
+
+            <strong>
+              Learning Report
+            </strong>
+
+            <span>
+              This Week
+            </span>
+
+          </div>
+
+
+          <div class="report-row">
+
+            <span>
+              Classes Attended
+            </span>
+
+            <strong>
+              8
+            </strong>
+
+          </div>
+
+
+          <div class="report-row">
+
+            <span>
+              Practice Completed
+            </span>
+
+            <strong>
+              86%
+            </strong>
+
+          </div>
+
+
+          <div class="report-row">
+
+            <span>
+              Quiz Performance
+            </span>
+
+            <strong>
+              82%
+            </strong>
+
+          </div>
+
+
+          <div class="report-row">
+
+            <span>
+              Revision Activity
+            </span>
+
+            <strong>
+              Good
+            </strong>
+
+          </div>
 
         </div>
 
@@ -813,71 +928,80 @@
 
       <div class="container app-grid">
 
+
         <div class="app-content reveal">
 
-          <span class="section-tag">
-            MANAVTACLASS APP
+          <span class="section-label">
+            LEARN ON THE GO
           </span>
 
           <h2>
-            Learning that stays
-            <span>with you.</span>
+            Your learning journey,
+            wherever you are.
           </h2>
 
           <p>
-            Access your ManavtaClass learning experience from
-            your Android device.
+            Access your ManavtaClass learning experience
+            through the Android app.
           </p>
 
-          <div class="app-buttons">
 
-            <a href="https://play.google.com/store/apps/details?id=cccom.manavtaclass.myapp" target="_blank"
-              rel="noopener noreferrer" class="btn btn-white">
-              Get it on Google Play
-            </a>
+          <a href="https://play.google.com/store/apps/details?id=com.manavtaclass.myapp" target="_blank"
+            rel="noopener noreferrer" class="play-button">
 
-            <a href="app-download.html" class="btn btn-outline-white">
-              Student App Download
-            </a>
+            <span>
+              ▶
+            </span>
 
-          </div>
+            <div>
+
+              <small>
+                GET IT ON
+              </small>
+
+              <strong>
+                Google Play
+              </strong>
+
+            </div>
+
+          </a>
 
         </div>
 
 
-        <div class="phone-mockup reveal">
+        <div class="phone reveal">
 
           <div class="phone-screen">
 
-            <div class="phone-top"></div>
-
             <div class="phone-logo">
-              M
+              <a href="./index.html" class="logo" aria-label="ManavtaClass Home">
+                <img src="./assets/logo.png" alt="ManavtaClass Logo" width="80" height="80">
+              </a>
             </div>
 
-            <h3>ManavtaClass</h3>
+            <h3>
+              ManavtaClass
+            </h3>
 
             <p>
               Learn Better.<br>
               Perform Better.
             </p>
 
-            <div class="phone-feature">
-              ✓ Live Classes
-            </div>
+            <div class="phone-line"></div>
 
-            <div class="phone-feature">
-              ✓ Live Quizzes
-            </div>
+            <span>
+              Live Classes
+            </span>
 
-            <div class="phone-feature">
-              ✓ Learning Reports
-            </div>
+            <span>
+              Live Quizzes
+            </span>
 
-            <a href="https://play.google.com/store/apps/details?id=cccom.manavtaclass.myapp" target="_blank"
-              rel="noopener noreferrer" class="phone-download">
-              Download App
-            </a>
+            <span>
+              Progress Reports
+            </span>
 
           </div>
 
@@ -888,141 +1012,218 @@
     </section>
 
 
-    <!-- ================= BLOG PREVIEW ================= -->
+    <!-- ================= ENROLLMENT ================= -->
 
-    <section class="section blog-section">
+    <section class="section" id="enrollment">
 
       <div class="container">
 
-        <div class="section-header reveal">
 
-          <div>
+        <div class="section-heading reveal">
 
-            <span class="section-tag">
-              MANAVTACLASS BLOG
-            </span>
-
-            <h2>
-              Learn beyond
-              <span>the classroom.</span>
-            </h2>
-
-          </div>
-
-          <a href="blogs.html" class="text-link">
-            View all blogs →
-          </a>
-
-        </div>
-
-
-        <div class="blog-grid">
-
-          <article class="blog-card reveal">
-
-            <div class="blog-category">
-              STUDY SKILLS
-            </div>
-
-            <h3>
-              How to Build a Simple Study Routine
-            </h3>
-
-            <p>
-              A practical approach to creating consistency
-              without making studying unnecessarily complicated.
-            </p>
-
-            <a href="blogs.html#study-routine">
-              Read article →
-            </a>
-
-          </article>
-
-
-          <article class="blog-card reveal">
-
-            <div class="blog-category">
-              REVISION
-            </div>
-
-            <h3>
-              Why Revision Should Not Start Before Exams
-            </h3>
-
-            <p>
-              Understand how regular revision can help students
-              connect earlier concepts with new learning.
-            </p>
-
-            <a href="blogs.html#revision">
-              Read article →
-            </a>
-
-          </article>
-
-
-          <article class="blog-card reveal">
-
-            <div class="blog-category">
-              PARENTS
-            </div>
-
-            <h3>
-              How Parents Can Support Better Learning
-            </h3>
-
-            <p>
-              Simple ways parents can encourage consistency,
-              practice and reflection at home.
-            </p>
-
-            <a href="blogs.html#parents">
-              Read article →
-            </a>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= ENROLL ================= -->
-
-    <section class="section enrollment-section" id="enroll">
-
-      <div class="container enrollment-box reveal">
-
-        <div>
-
-          <span class="section-tag">
-            START LEARNING
+          <span class="section-label">
+            ENROLLMENT
           </span>
 
           <h2>
-            Ready to make learning
-            <span>more structured?</span>
+            Start your learning journey.
           </h2>
 
           <p>
-            Choose your class and begin your ManavtaClass journey.
+            Choose your class and continue to enrollment.
           </p>
 
         </div>
 
-        <div class="enrollment-actions">
 
-          <a href="#classes" class="btn btn-primary">
-            Choose Your Class
-          </a>
+        <div class="enrollment-box reveal">
 
-          <a href="https://manavtaclass.educrypt.ai/" target="_blank" rel="noopener noreferrer"
-            class="btn btn-secondary">
-            Student Dashboard
-          </a>
+
+          <div class="offer">
+
+            <span class="offer-label">
+              INTRODUCTORY ENROLLMENT
+            </span>
+
+
+            <div class="price">
+
+              <span class="old-price">
+                ₹499
+              </span>
+
+              <strong>
+                ₹29
+              </strong>
+
+            </div>
+
+
+            <p>
+              Get started with ManavtaClass and explore
+              a structured learning experience.
+            </p>
+
+          </div>
+
+
+          <div class="enrollment-buttons">
+
+
+            <a href="https://education.manavtaclass.com/" class="enroll-btn">
+
+              Class 6
+
+            </a>
+
+
+            <a href="https://education.manavtaclass.com/" class="enroll-btn">
+
+              Class 7
+
+            </a>
+
+
+            <a href="https://education.manavtaclass.com/" class="enroll-btn">
+
+              Class 8
+
+            </a>
+
+
+            <a href="https://education.manavtaclass.com/" class="enroll-btn">
+
+              Class 9
+
+            </a>
+
+
+            <a href="https://education.manavtaclass.com/" class="enroll-btn">
+
+              Class 10
+
+            </a>
+
+
+            <a href="https://education.manavtaclass.com/" class="enroll-btn">
+
+              Class 11
+
+            </a>
+
+
+            <a href="https://education.manavtaclass.com/" class="enroll-btn">
+
+              Class 12
+
+            </a>
+
+
+          </div>
+
+
+          <small class="payment-note">
+
+            Continue to ManavtaClass enrollment to select your
+            class and complete payment.
+
+          </small>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= BLOG ================= -->
+
+    <section class="section section-light">
+
+      <div class="container">
+
+
+        <div class="section-heading reveal">
+
+          <span class="section-label">
+            LATEST FROM MANAVTACLASS
+          </span>
+
+          <h2>
+            Learn beyond the classroom.
+          </h2>
+
+        </div>
+
+
+        <div class="blog-preview-grid">
+
+
+          <article class="blog-preview reveal">
+
+            <span>
+              STUDY
+            </span>
+
+            <h3>
+              Why regular revision matters
+            </h3>
+
+            <p>
+              Revisiting concepts helps students connect
+              previous learning with new topics.
+            </p>
+
+            <a href="./blogs.html">
+              Read article →
+            </a>
+
+          </article>
+
+
+          <article class="blog-preview reveal">
+
+            <span>
+              PRACTICE
+            </span>
+
+            <h3>
+              Practice is part of learning
+            </h3>
+
+            <p>
+              Understanding a concept is only the first step.
+              Applying it makes learning stronger.
+            </p>
+
+            <a href="./blogs.html">
+              Read article →
+            </a>
+
+          </article>
+
+
+          <article class="blog-preview reveal">
+
+            <span>
+              PARENTS
+            </span>
+
+            <h3>
+              How parents can support learning
+            </h3>
+
+            <p>
+              Simple routines and consistent support can
+              make studying more effective.
+            </p>
+
+            <a href="./blogs.html">
+              Read article →
+            </a>
+
+          </article>
+
 
         </div>
 
@@ -1033,19 +1234,19 @@
 
     <!-- ================= FAQ ================= -->
 
-    <section class="section faq-section">
+    <section class="faq-section">
 
-      <div class="container faq-container">
+      <div class="container">
 
-        <div class="section-header center">
 
-          <span class="section-tag">
+        <div class="section-heading reveal">
+
+          <span class="section-label">
             FAQ
           </span>
 
           <h2>
-            Frequently asked
-            <span>questions.</span>
+            Frequently asked questions.
           </h2>
 
         </div>
@@ -1053,93 +1254,133 @@
 
         <div class="faq-list">
 
-          <div class="faq-item">
 
-            <button class="faq-question">
+          <div class="faq-item reveal">
+
+            <button type="button" class="faq-question" aria-expanded="false">
+
               Which classes does ManavtaClass support?
-              <span>+</span>
+
+              <span>
+                +
+              </span>
+
             </button>
 
+
             <div class="faq-answer">
+
               <p>
                 ManavtaClass is designed to support students
-                from Classes 6 to 12. Programs and subjects
-                may vary by class and academic session.
+                from Classes 6 to 12 with CBSE and ICSE learning.
+                Current enrollment availability may vary by class.
               </p>
+
             </div>
 
           </div>
 
 
-          <div class="faq-item">
+          <div class="faq-item reveal">
 
-            <button class="faq-question">
-              Are the classes live?
-              <span>+</span>
+            <button type="button" class="faq-question" aria-expanded="false">
+
+              Are live classes available?
+
+              <span>
+                +
+              </span>
+
             </button>
 
+
             <div class="faq-answer">
+
               <p>
-                ManavtaClass includes teacher-led live learning
-                along with practice, assessments and revision
-                support.
+                Yes. Live classes are part of the
+                ManavtaClass learning experience.
               </p>
+
             </div>
 
           </div>
 
 
-          <div class="faq-item">
+          <div class="faq-item reveal">
 
-            <button class="faq-question">
-              Can students revise classes?
-              <span>+</span>
+            <button type="button" class="faq-question" aria-expanded="false">
+
+              Can students revise classes later?
+
+              <span>
+                +
+              </span>
+
             </button>
 
+
             <div class="faq-answer">
+
               <p>
-                Recorded learning access can be used for
-                revision where provided as part of the
-                student's program.
+                Recorded learning and revision resources can
+                help students revisit concepts after a live class.
               </p>
+
             </div>
 
           </div>
 
 
-          <div class="faq-item">
+          <div class="faq-item reveal">
 
-            <button class="faq-question">
-              How can students access their dashboard?
-              <span>+</span>
+            <button type="button" class="faq-question" aria-expanded="false">
+
+              How can parents monitor progress?
+
+              <span>
+                +
+              </span>
+
             </button>
 
+
             <div class="faq-answer">
+
               <p>
-                Students can access the ManavtaClass Student
-                Dashboard through the Student Dashboard button
-                on this website.
+                Parents can use the Student Dashboard to
+                access available learning and progress information.
               </p>
+
             </div>
 
           </div>
 
 
-          <div class="faq-item">
+          <div class="faq-item reveal">
 
-            <button class="faq-question">
-              Where can I download the Android app?
-              <span>+</span>
+            <button type="button" class="faq-question" aria-expanded="false">
+
+              How do I enroll?
+
+              <span>
+                +
+              </span>
+
             </button>
 
+
             <div class="faq-answer">
+
               <p>
-                The official Android application is available
-                through Google Play.
+                Select your class from the enrollment section
+                and continue to the ManavtaClass enrollment page
+                to complete the enrollment process.
               </p>
+
             </div>
 
           </div>
+
 
         </div>
 
@@ -1152,116 +1393,164 @@
 
   <!-- ================= FOOTER ================= -->
 
-  <footer class="site-footer">
+  <footer class="footer">
 
     <div class="container footer-grid">
 
+
+      <!-- Brand -->
+
       <div class="footer-brand">
 
-        <a href="index.html" class="logo footer-logo">
+        <a href="./index.html" class="logo footer-logo" aria-label="ManavtaClass Home">
 
-          <span class="logo-mark">M</span>
+          <span class="logo-mark">
+            <!-- <a href="./index.html" class="logo" aria-label="ManavtaClass Home"> -->
+            <img src="./assets/logo.png" alt="ManavtaClass Logo" width="40" height="40">
+            <!-- </a> -->
+          </span>
 
           <span>
-            <strong>Manavta</strong><span>Class</span>
+            Manavta<span>Class</span>
           </span>
 
         </a>
+
 
         <p>
           Learn Better. Perform Better.
         </p>
 
-        <div class="social-links">
 
-          <a href="https://www.facebook.com/profile.php?id=61593986673077" target="_blank" rel="noopener noreferrer"
-            aria-label="Facebook">
-            f
-          </a>
-
-          <a href="https://www.instagram.com/manavtaclass" target="_blank" rel="noopener noreferrer"
-            aria-label="Instagram">
-            ◎
-          </a>
-
-        </div>
+        <p>
+          A structured learning platform for students
+          from Classes 6 to 12.
+        </p>
 
       </div>
 
 
-      <div class="footer-column">
-
-        <h4>Explore</h4>
-
-        <a href="#classes">Classes</a>
-        <a href="#learning">Learning System</a>
-        <a href="#features">Features</a>
-        <a href="blogs.html">Blogs</a>
-
-      </div>
-
+      <!-- Explore -->
 
       <div class="footer-column">
 
-        <h4>Students</h4>
+        <h4>
+          Explore
+        </h4>
+
+        <a href="./about.html">
+          About
+        </a>
+
+        <a href="./blogs.html">
+          Blogs
+        </a>
+
+        <a href="./contact.html">
+          Contact
+        </a>
 
         <a href="https://manavtaclass.educrypt.ai/" target="_blank" rel="noopener noreferrer">
+
           Student Dashboard
-        </a>
 
-        <a href="app-download.html">
-          Download App
-        </a>
-
-        <a href="https://play.google.com/store/apps/details?id=cccom.manavtaclass.myapp" target="_blank"
-          rel="noopener noreferrer">
-          Google Play
         </a>
 
       </div>
 
 
+      <!-- Legal -->
+
       <div class="footer-column">
 
-        <h4>Information</h4>
+        <h4>
+          Legal
+        </h4>
 
-        <a href="#">About Us</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Refund Policy</a>
+
+        <a href="https://manavtaclass.educrypt.ai/privacy-policy" target="_blank" rel="noopener noreferrer">
+
+          Privacy Policy
+
+        </a>
+
+
+        <a href="https://manavtaclass.educrypt.ai/terms&condition" target="_blank" rel="noopener noreferrer">
+
+          Terms & Conditions
+
+        </a>
+
+
+        <a href="https://manavtaclass.educrypt.ai/refund-policy" target="_blank" rel="noopener noreferrer">
+
+          Refund / Cancellation Policy
+
+        </a>
+
+      </div>
+
+
+      <!-- Connect -->
+
+      <div class="footer-column">
+
+        <h4>
+          Connect
+        </h4>
+
+
+        <a href="https://www.facebook.com/profile.php?id=61593986673077" target="_blank" rel="noopener noreferrer">
+
+          Facebook
+
+        </a>
+
+
+        <a href="https://www.instagram.com/manavtaclass" target="_blank" rel="noopener noreferrer">
+
+          Instagram
+
+        </a>
+
+
+        <a href="https://play.google.com/store/apps/details?id=com.manavtaclass.myapp" target="_blank"
+          rel="noopener noreferrer">
+
+          Google Play
+
+        </a>
 
       </div>
 
     </div>
 
 
-    <div class="container footer-bottom">
+    <!-- Footer Bottom -->
 
-      <p>
-        © <span id="currentYear"></span> ManavtaClass. All rights reserved.
-      </p>
+    <div class="footer-bottom">
 
-      <p>
-        Education • Learning • Growth
-      </p>
+      <div class="container">
+
+        <span>
+          © <span id="year"></span> ManavtaClass.
+          All rights reserved.
+        </span>
+
+        <span>
+          Built for better learning.
+        </span>
+
+      </div>
 
     </div>
 
   </footer>
 
 
-  <!-- Floating App Button -->
+  <!-- JavaScript -->
 
-  <a href="https://play.google.com/store/apps/details?id=cccom.manavtaclass.myapp" class="floating-app" target="_blank"
-    rel="noopener noreferrer">
-
-    <span>↓</span>
-    Download App
-
-  </a>
-
-
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 
 </body>
 
