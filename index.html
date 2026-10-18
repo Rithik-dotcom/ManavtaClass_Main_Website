@@ -89,7 +89,232 @@
     "url": "https://manavtaclass.com/"
   }
   </script>
+  <style>
+    /* ManavtaClass Banner */
+    .mc-banner {
+      width: 92%;
+      max-width: 1180px;
+      margin: 30px auto;
+      padding: 55px 45px;
+      box-sizing: border-box;
+      border-radius: 26px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 35px;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      background:
+        radial-gradient(circle at 85% 15%, rgba(255, 255, 255, .18), transparent 30%),
+        linear-gradient(125deg, #082f80, #1769e8 55%, #7548e8);
+    }
 
+    .mc-banner * {
+      box-sizing: border-box;
+    }
+
+    .mc-banner-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .mc-banner-badge {
+      display: inline-block;
+      padding: 9px 15px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(255, 255, 255, .35);
+      border-radius: 50px;
+      background: rgba(255, 255, 255, .13);
+      color: #ffe18a;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .mc-banner h1 {
+      margin: 0 0 20px;
+      color: #ffffff;
+      font-size: clamp(34px, 4.5vw, 56px);
+      font-weight: 800;
+      line-height: 1.12;
+    }
+
+    .mc-banner h1 span {
+      color: #ffdc75;
+    }
+
+    .mc-banner p {
+      max-width: 570px;
+      margin: 0 0 24px;
+      color: #edf4ff;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .mc-banner-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      margin-bottom: 28px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .mc-banner-features span {
+      color: #ffffff;
+    }
+
+    .mc-banner-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 15px 24px;
+      border-radius: 12px;
+      background: #ffdc75;
+      color: #102f73;
+      font-size: 15px;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, .15);
+      transition: transform .2s ease, background .2s ease;
+    }
+
+    .mc-banner-cta:hover {
+      transform: translateY(-3px);
+      background: #ffebaa;
+    }
+
+    .mc-banner-visual {
+      position: relative;
+      flex: 0 0 330px;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mc-banner-ring {
+      position: absolute;
+      width: 270px;
+      height: 270px;
+      border: 2px dashed rgba(255, 255, 255, .3);
+      border-radius: 50%;
+    }
+
+    .mc-banner-main-card {
+      position: relative;
+      z-index: 2;
+      width: 235px;
+      padding: 30px 20px;
+      border: 1px solid rgba(255, 255, 255, .4);
+      border-radius: 24px;
+      background: rgba(255, 255, 255, .16);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, .15);
+      text-align: center;
+      backdrop-filter: blur(8px);
+    }
+
+    .mc-banner-cap {
+      display: grid;
+      place-items: center;
+      width: 85px;
+      height: 85px;
+      margin: 0 auto 18px;
+      border-radius: 25px;
+      background: #ffdc75;
+      font-size: 46px;
+      transform: rotate(-6deg);
+    }
+
+    .mc-banner-main-card h3 {
+      margin: 0 0 10px;
+      color: #ffffff;
+      font-size: 20px;
+    }
+
+    .mc-banner-main-card p {
+      margin: 0;
+      color: #f1f5ff;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .mc-banner-float {
+      position: absolute;
+      z-index: 3;
+      padding: 12px 15px;
+      border-radius: 13px;
+      background: #ffffff;
+      color: #173b87;
+      font-size: 13px;
+      font-weight: 800;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, .14);
+    }
+
+    .mc-banner-float-top {
+      top: 8px;
+      right: 0;
+    }
+
+    .mc-banner-float-bottom {
+      bottom: 8px;
+      left: 0;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 760px) {
+      .mc-banner {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 32px 22px;
+        gap: 12px;
+      }
+
+      .mc-banner h1 {
+        font-size: clamp(32px, 8vw, 43px);
+      }
+
+      .mc-banner p {
+        font-size: 14px;
+      }
+
+      .mc-banner-features {
+        flex-direction: column;
+        gap: 11px;
+      }
+
+      .mc-banner-cta {
+        width: 100%;
+      }
+
+      .mc-banner-visual {
+        flex-basis: auto;
+        min-height: 280px;
+        width: 100%;
+      }
+
+      .mc-banner-ring {
+        width: 240px;
+        height: 240px;
+      }
+
+      .mc-banner-float-top {
+        right: 0;
+      }
+
+      .mc-banner-float-bottom {
+        left: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .mc-banner-cta {
+        transition: none;
+      }
+    }
+  </style>
 </head>
 
 
@@ -329,6 +554,72 @@
 
 
 
+
+
+
+
+
+
+
+
+
+    <section class="mc-banner">
+      <div class="mc-banner-content">
+        <div class="mc-banner-badge">
+          MANAVTACLASS LIVE LEARNING APP
+        </div>
+
+        <h1>
+          Learn Better.<br>
+          <span>Perform Better.</span>
+        </h1>
+
+        <p>
+          Give your child a smarter learning experience with live
+          Maths and Science classes, Olympiad preparation, regular
+          tests and personal mentor support.
+        </p>
+
+        <div class="mc-banner-features">
+          <span>✓ Live Interactive Classes</span>
+          <span>✓ Tests & Progress Reports</span>
+          <span>✓ Personal Mentor Support</span>
+        </div>
+
+        <a class="mc-banner-cta" href="https://education.manavtaclass.com/">
+          Explore Courses <span>→</span>
+        </a>
+      </div>
+
+      <div class="mc-banner-visual">
+        <div class="mc-banner-ring"></div>
+
+        <div class="mc-banner-float mc-banner-float-top">
+          🧪 Explore Science
+        </div>
+
+        <div class="mc-banner-main-card">
+          <div class="mc-banner-cap">🎓</div>
+          <h3>Learn with Confidence</h3>
+          <p>Learn. Practise. Assess. Improve.</p>
+        </div>
+
+        <div class="mc-banner-float mc-banner-float-bottom">
+          ⭐ Every Student Can Improve
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
     <!-- ===================================================
          LEARNING
     =================================================== -->
@@ -515,6 +806,402 @@
 
     </section>
 
+
+
+
+
+
+
+
+    <!-- MANAVTACLASS FEATURE CAROUSEL: Copy this entire block -->
+    <section id="mc-feature-carousel">
+      <style>
+        #mc-feature-carousel {
+          --mc-blue: #0866e8;
+          --mc-navy: #08265b;
+          --mc-cyan: #39d5ff;
+          padding: 65px 20px;
+          background: linear-gradient(135deg, #061b49, #0759c7, #00a8ed);
+          color: #fff;
+          font-family: Inter, Arial, sans-serif;
+          overflow: hidden;
+        }
+
+        #mc-feature-carousel * {
+          box-sizing: border-box;
+        }
+
+        #mc-feature-carousel .mc-heading {
+          max-width: 760px;
+          margin: 0 auto 35px;
+          text-align: center;
+        }
+
+        #mc-feature-carousel .mc-eyebrow {
+          display: inline-block;
+          padding: 8px 15px;
+          border: 1px solid rgba(255, 255, 255, .35);
+          border-radius: 50px;
+          background: rgba(255, 255, 255, .12);
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+        }
+
+        #mc-feature-carousel h2 {
+          margin: 17px 0 12px;
+          color: #fff;
+          font-size: clamp(28px, 4vw, 44px);
+          line-height: 1.2;
+          font-weight: 850;
+        }
+
+        #mc-feature-carousel .mc-subtitle {
+          margin: 0;
+          color: #e0f2ff;
+          font-size: 16px;
+          line-height: 1.7;
+        }
+
+        #mc-feature-carousel .mc-window {
+          max-width: 1050px;
+          margin: 0 auto;
+          overflow: hidden;
+          padding: 8px 3px 18px;
+        }
+
+        #mc-feature-carousel .mc-track {
+          display: flex;
+          gap: 20px;
+          transition: transform .45s ease;
+          will-change: transform;
+        }
+
+        #mc-feature-carousel .mc-card {
+          flex: 0 0 calc((100% - 20px) / 2);
+          min-width: 0;
+          padding: 30px 25px;
+          border: 1px solid rgba(255, 255, 255, .65);
+          border-radius: 24px;
+          color: #10254b;
+          background: linear-gradient(145deg, #fff, #eaf5ff);
+          box-shadow: 0 18px 40px rgba(0, 18, 65, .2);
+          transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        #mc-feature-carousel .mc-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 24px 45px rgba(0, 18, 65, .3);
+        }
+
+        #mc-feature-carousel .mc-icon {
+          display: flex;
+          width: 70px;
+          height: 70px;
+          align-items: center;
+          justify-content: center;
+          border-radius: 20px;
+          margin-bottom: 22px;
+          color: #fff;
+          font-size: 34px;
+          background: linear-gradient(135deg, #0866e8, #19c4f5);
+          box-shadow: 0 9px 22px rgba(8, 102, 232, .25);
+        }
+
+        #mc-feature-carousel .mc-card:nth-child(2) .mc-icon {
+          background: linear-gradient(135deg, #7138e8, #bd65ff);
+        }
+
+        #mc-feature-carousel .mc-card:nth-child(3) .mc-icon {
+          background: linear-gradient(135deg, #ed7b16, #ffc247);
+        }
+
+        #mc-feature-carousel .mc-card h3 {
+          margin: 0 0 12px;
+          color: #08265b;
+          font-size: 23px;
+          line-height: 1.3;
+        }
+
+        #mc-feature-carousel .mc-card p {
+          margin: 0 0 20px;
+          color: #53647f;
+          font-size: 15px;
+          line-height: 1.8;
+        }
+
+        #mc-feature-carousel .mc-points {
+          display: grid;
+          gap: 11px;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+        }
+
+        #mc-feature-carousel .mc-points li {
+          display: flex;
+          align-items: flex-start;
+          gap: 9px;
+          color: #243b60;
+          font-size: 14px;
+          line-height: 1.5;
+        }
+
+        #mc-feature-carousel .mc-check {
+          color: #0879e8;
+          font-weight: 900;
+        }
+
+        #mc-feature-carousel .mc-controls {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          margin: 18px auto 0;
+        }
+
+        #mc-feature-carousel .mc-arrow {
+          display: flex;
+          width: 46px;
+          height: 46px;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid rgba(255, 255, 255, .6);
+          border-radius: 50%;
+          color: #fff;
+          background: rgba(255, 255, 255, .13);
+          font-size: 25px;
+          cursor: pointer;
+          transition: background .2s, transform .2s;
+        }
+
+        #mc-feature-carousel .mc-arrow:hover {
+          background: rgba(255, 255, 255, .28);
+          transform: scale(1.06);
+        }
+
+        #mc-feature-carousel .mc-arrow:focus-visible,
+        #mc-feature-carousel .mc-dot:focus-visible {
+          outline: 3px solid #fff;
+          outline-offset: 4px;
+        }
+
+        #mc-feature-carousel .mc-dots {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 9px;
+        }
+
+        #mc-feature-carousel .mc-dot {
+          width: 10px;
+          height: 10px;
+          padding: 0;
+          border: 0;
+          border-radius: 20px;
+          background: rgba(255, 255, 255, .5);
+          cursor: pointer;
+          transition: width .25s, background .25s;
+        }
+
+        #mc-feature-carousel .mc-dot.is-active {
+          width: 28px;
+          background: #fff;
+        }
+
+        #mc-feature-carousel .mc-footer {
+          margin: 28px auto 0;
+          text-align: center;
+          color: #e4f5ff;
+          font-size: 14px;
+        }
+
+        @media (min-width: 1100px) {
+          #mc-feature-carousel .mc-card {
+            flex-basis: calc((100% - 40px) / 3);
+          }
+        }
+
+        @media (max-width: 600px) {
+          #mc-feature-carousel {
+            padding: 45px 15px;
+          }
+
+          #mc-feature-carousel .mc-heading {
+            margin-bottom: 24px;
+          }
+
+          #mc-feature-carousel .mc-subtitle {
+            font-size: 14px;
+          }
+
+          #mc-feature-carousel .mc-track {
+            gap: 12px;
+          }
+
+          #mc-feature-carousel .mc-card {
+            flex-basis: 100%;
+            padding: 25px 22px;
+          }
+
+          #mc-feature-carousel .mc-card h3 {
+            font-size: 22px;
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+          #mc-feature-carousel .mc-track,
+          #mc-feature-carousel .mc-card,
+          #mc-feature-carousel .mc-arrow,
+          #mc-feature-carousel .mc-dot {
+            transition: none;
+          }
+        }
+      </style>
+
+      <div class="mc-heading">
+        <span class="mc-eyebrow">The ManavtaClass Advantage</span>
+        <h2>Learning Beyond the Classroom</h2>
+        <p class="mc-subtitle">
+          Expert teaching, personal guidance and regular assessments
+          to help every student improve.
+        </p>
+      </div>
+
+      <div class="mc-window" id="mcFeatureWindow">
+        <div class="mc-track" id="mcFeatureTrack">
+
+          <article class="mc-card">
+            <div class="mc-icon" aria-hidden="true">🎓</div>
+            <h3>Master Teacher</h3>
+            <p>Build strong concepts with engaging, structured live classes.</p>
+            <ul class="mc-points">
+              <li><span class="mc-check">✓</span> Mathematics and Science learning</li>
+              <li><span class="mc-check">✓</span> Concept clarity and problem-solving</li>
+              <li><span class="mc-check">✓</span> Olympiad-focused preparation</li>
+            </ul>
+          </article>
+
+          <article class="mc-card">
+            <div class="mc-icon" aria-hidden="true">🤝</div>
+            <h3>Mentor Teacher</h3>
+            <p>Get individual guidance, doubt support and help building better study habits.</p>
+            <ul class="mc-points">
+              <li><span class="mc-check">✓</span> Doubt-solving sessions on Google Meet</li>
+              <li><span class="mc-check">✓</span> Reading practice and learning guidance</li>
+              <li><span class="mc-check">✓</span> Progress updates and parent discussions</li>
+            </ul>
+          </article>
+
+          <article class="mc-card">
+            <div class="mc-icon" aria-hidden="true">📊</div>
+            <h3>Tests & Reports</h3>
+            <p>Understand performance through regular practice and progress tracking.</p>
+            <ul class="mc-points">
+              <li><span class="mc-check">✓</span> Live tests and practice questions</li>
+              <li><span class="mc-check">✓</span> Identify strengths and improvement areas</li>
+              <li><span class="mc-check">✓</span> Track learning progress over time</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="mc-controls" aria-label="Carousel controls">
+        <button class="mc-arrow" id="mcFeaturePrev" type="button" aria-label="Previous feature">‹</button>
+        <div class="mc-dots" id="mcFeatureDots" aria-label="Choose a feature"></div>
+        <button class="mc-arrow" id="mcFeatureNext" type="button" aria-label="Next feature">›</button>
+      </div>
+
+      <p class="mc-footer">Every student deserves the right guidance to grow. ✨</p>
+
+      <script>
+        (() => {
+          const root = document.getElementById("mc-feature-carousel");
+          if (!root || root.dataset.initialized === "true") return;
+          root.dataset.initialized = "true";
+
+          const track = root.querySelector("#mcFeatureTrack");
+          const windowEl = root.querySelector("#mcFeatureWindow");
+          const slides = Array.from(track.children);
+          const dotsContainer = root.querySelector("#mcFeatureDots");
+          const prev = root.querySelector("#mcFeaturePrev");
+          const next = root.querySelector("#mcFeatureNext");
+
+          let index = 0;
+          let maxIndex = 0;
+
+          function measure() {
+            if (!slides.length) return;
+
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            const gap = parseFloat(getComputedStyle(track).gap) || 0;
+            const step = slideWidth + gap;
+            const visible = Math.max(
+              1,
+              Math.round((windowEl.clientWidth + gap) / step)
+            );
+
+            maxIndex = Math.max(0, slides.length - visible);
+            index = Math.min(index, maxIndex);
+
+            dotsContainer.replaceChildren();
+
+            for (let i = 0; i <= maxIndex; i++) {
+              const dot = document.createElement("button");
+              dot.type = "button";
+              dot.className = "mc-dot";
+              dot.setAttribute("aria-label", "Go to slide " + (i + 1));
+              dot.addEventListener("click", () => {
+                index = i;
+                render();
+              });
+              dotsContainer.appendChild(dot);
+            }
+
+            render();
+          }
+
+          function render() {
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            const gap = parseFloat(getComputedStyle(track).gap) || 0;
+
+            track.style.transform =
+              "translateX(-" + (index * (slideWidth + gap)) + "px)";
+
+            Array.from(dotsContainer.children).forEach((dot, i) => {
+              dot.classList.toggle("is-active", i === index);
+              dot.setAttribute("aria-current", i === index ? "true" : "false");
+            });
+
+            prev.disabled = index === 0;
+            next.disabled = index === maxIndex;
+            prev.style.opacity = prev.disabled ? ".5" : "1";
+            next.style.opacity = next.disabled ? ".5" : "1";
+          }
+
+          prev.addEventListener("click", () => {
+            if (index > 0) {
+              index--;
+              render();
+            }
+          });
+
+          next.addEventListener("click", () => {
+            if (index < maxIndex) {
+              index++;
+              render();
+            }
+          });
+
+          window.addEventListener("resize", measure);
+          measure();
+        })();
+      </script>
+    </section>
+    <!-- END MANAVTACLASS FEATURE CAROUSEL -->
 
 
     <!-- ===================================================
@@ -905,7 +1592,7 @@
             rel="noopener noreferrer" class="play-button">
 
             <span>
-              ▶
+              <img src="./assets/google-play.png" alt="Google Play Store Badge" width="50" height="50">
             </span>
 
             <div>
@@ -1006,11 +1693,11 @@
             <div class="price">
 
               <span class="old-price">
-                ₹499
+                ₹299
               </span>
 
               <strong>
-                ₹29
+                ₹9
               </strong>
 
             </div>
@@ -1176,11 +1863,13 @@
 
 
 
+
+
     <!-- ===================================================
          FAQ
     =================================================== -->
 
-    <section class="faq-section">
+    <!-- <section class="faq-section">
 
       <div class="container">
 
@@ -1331,7 +2020,7 @@
 
       </div>
 
-    </section>
+    </section> -->
 
   </main>
 
