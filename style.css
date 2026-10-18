@@ -366,8 +366,9 @@ button {
 
 .hero-visual {
   display: flex;
-
+  align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .dashboard-card {
@@ -1724,8 +1725,44 @@ button {
   }
 
   .hero-visual {
-    margin-top: 20px;
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+
+  /* Force the hero image to 50% of its column */
+  .hero-grid>.hero-visual {
+    min-width: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-grid>.hero-visual>img.hero-image {
+    display: block;
+    width: 50% !important;
+    max-width: 50% !important;
+    height: auto;
+    flex: 0 0 50%;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+
+  /* Mobile layout */
+  @media (max-width: 900px) {
+    .hero-grid>.hero-visual>img.hero-image {
+      width: 80% !important;
+      max-width: 80% !important;
+      flex-basis: 80%;
+    }
+  }
+
+
+
 
   .learning-grid {
     grid-template-columns: repeat(2, 1fr);

@@ -32,9 +32,6 @@
         <input id="parentPhone" name="parentPhone" type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10"
           required />
 
-        <label for="parentEmail">Parent's Email</label>
-        <input id="parentEmail" name="parentEmail" type="email" autocomplete="email" required maxlength="254" />
-
         <label for="plan">Select Long-Term Plan</label>
         <select id="plan" name="plan" required>
           <option value="6-7">Class 6 & 7</option>
@@ -49,10 +46,12 @@
             <span>Original Price</span>
             <span id="originalPrice"></span>
           </div>
+
           <div class="price-row offer-row">
             <span>Offer Price</span>
             <strong id="offerPrice"></strong>
           </div>
+
           <p id="savings" class="savings"></p>
         </div>
 
