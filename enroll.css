@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f6fc;
+  color: #172033;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: min(100% - 28px, 560px);
+  margin: 32px auto;
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.brand h1 {
+  color: #1646a0;
+  margin-bottom: 8px;
+}
+
+.brand p,
+.muted {
+  color: #667085;
+}
+
+.card {
+  background: white;
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(25, 50, 90, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  line-height: 1.35;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin: 18px 0 8px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d0d5dd;
+  border-radius: 9px;
+  font-size: 16px;
+  background: white;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #7da8ff;
+  border-color: #1646a0;
+}
+
+.price-box {
+  background: #f7f9fe;
+  padding: 18px;
+  border-radius: 12px;
+  margin: 22px 0;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.offer-row {
+  font-size: 19px;
+  color: #1646a0;
+  margin-bottom: 0;
+}
+
+.savings {
+  color: #18794e;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  background: #1646a0;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+#status {
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  text-align: center;
+  color: #667085;
+  font-size: 13px;
+  margin: 24px 0;
+}
+
+footer a {
+  color: #1646a0;
+}
+
+@media (max-width: 420px) {
+  .card {
+    padding: 19px;
+  }
+}
