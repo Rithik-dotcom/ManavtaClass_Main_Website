@@ -55,8 +55,8 @@ form.addEventListener("submit", async (event) => {
     const phone = document.getElementById("parentPhone")
       .value.trim();
 
-    const email = document.getElementById("parentEmail")
-      .value.trim();
+    // const email = document.getElementById("parentEmail")
+    //   .value.trim();
 
     const planId = planSelect.value;
 
