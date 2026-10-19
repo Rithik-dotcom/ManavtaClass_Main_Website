@@ -2,7 +2,7 @@ module.exports = {
   "6-7": {
     name: "Class 6 & 7",
     originalPrice: 21999,
-    offerPrice: 14999
+    offerPrice: 15999
   },
   "7-8": {
     name: "Class 7 & 8",
