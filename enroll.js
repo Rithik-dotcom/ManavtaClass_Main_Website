@@ -1,5 +1,5 @@
 const plans = {
-  "6-7": { original: 21999, offer: 15999 },
+  "6-7": { original: 21999, offer: 14999 },
   "7-8": { original: 21999, offer: 14999 },
   "8-9": { original: 23999, offer: 15999 },
   "9-10": { original: 24999, offer: 17999 },
