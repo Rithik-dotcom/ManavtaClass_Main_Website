@@ -1,4 +1,129 @@
-< !DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="theme-color" content="#1646a0" /><title>Enroll Now | ManavtaClass</title><link rel="stylesheet" href="/enroll.css" /><script src="https://checkout.razorpay.com/v1/checkout.js"></script><script src="/enroll.js" defer></script></head><body><main class="container"><header class="brand"><h1>ManavtaClass</h1><p>Live Learning · Maths · Science · Olympiad</p></header><section class="card"><h2>Choose Your Long-Term Plan</h2><p class="muted">Select a plan for your child and enroll securely online. </p><form id="enrollmentForm"><label for="studentName">Student's Full Name</label>
- <input id="studentName" name="studentName" autocomplete="name" required maxlength="100" /><label for="parentPhone">Parent's Phone Number</label>
- <input id="parentPhone" name="parentPhone" type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10"
-required /><label for="plan">Select Long-Term Plan</label><select id="plan" name="plan" required><option value="6-7">Class 6 & 7</option><option value="7-8">Class 7 & 8</option><option value="8-9">Class 8 & 9</option><option value="9-10">Class 9 & 10</option><option value="10-11">Class 10 & 11</option></select><div class="price-box"><div class="price-row"><span>Original Price</span><span id="originalPrice"></span></div><div class="price-row offer-row"><span>Offer Price</span><strong id="offerPrice"></strong></div><p id="savings" class="savings"></p></div><button id="payButton" type="submit">Proceed to Secure Payment </button><p id="status" role="status" aria-live="polite"></p></form></section><footer><p>ManavtaClass Live Learning App</p><p><a href="/privacy-policy">Privacy Policy</a>· <a href="/terms">Terms & Conditions</a></p></footer></main></body></html>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f6fc;
+  color: #172033;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: min(100% - 28px, 560px);
+  margin: 32px auto;
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.brand h1 {
+  color: #1646a0;
+  margin-bottom: 8px;
+}
+
+.brand p,
+.muted {
+  color: #667085;
+}
+
+.card {
+  background: white;
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(25, 50, 90, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  line-height: 1.35;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin: 18px 0 8px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d0d5dd;
+  border-radius: 9px;
+  font-size: 16px;
+  background: white;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #7da8ff;
+  border-color: #1646a0;
+}
+
+.price-box {
+  background: #f7f9fe;
+  padding: 18px;
+  border-radius: 12px;
+  margin: 22px 0;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.offer-row {
+  font-size: 19px;
+  color: #1646a0;
+  margin-bottom: 0;
+}
+
+.savings {
+  color: #18794e;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  background: #1646a0;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+#status {
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  text-align: center;
+  color: #667085;
+  font-size: 13px;
+  margin: 24px 0;
+}
+
+footer a {
+  color: #1646a0;
+}
+
+@media (max-width: 420px) {
+  .card {
+    padding: 19px;
+  }
+}
