@@ -68,7 +68,7 @@ form.addEventListener("submit", async (event) => {
         planId,
         student,
         phone,
-        email,
+        // email,
       }),
     });
 
@@ -88,7 +88,7 @@ form.addEventListener("submit", async (event) => {
       prefill: {
         name: student,
         contact: phone,
-        email,
+        // email,
       },
       theme: { color: "#1646a0" },
 
