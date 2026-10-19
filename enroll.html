@@ -24,18 +24,18 @@
         Select a plan for your child and enroll securely online.
       </p>
 
-
       <form id="enrollmentForm">
-        <label for="studentName">Student Name</label>
-        <input type="text" id="studentName" name="studentName" required minlength="2" />
+        <label for="studentName">Student's Full Name</label>
+        <input id="studentName" name="studentName" autocomplete="name" required maxlength="100" />
 
-        <label for="parentPhone">Parent Phone</label>
-        <input type="tel" id="parentPhone" name="parentPhone" required pattern="[6-9][0-9]{9}" maxlength="10" />
+        <label for="parentPhone">Parent's Phone Number</label>
+        <input id="parentPhone" name="parentPhone" type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10"
+          required />
 
-        <label for="parentEmail">Parent Email</label>
-        <input type="email" id="parentEmail" name="parentEmail" required />
+        <!-- <label for="parentEmail">Parent's Email</label>
+        <input id="parentEmail" name="parentEmail" type="email" autocomplete="email" required maxlength="254" /> -->
 
-        <label for="plan">Select Course Plan</label>
+        <label for="plan">Select Long-Term Plan</label>
         <select id="plan" name="plan" required>
           <option value="6-7">Class 6 & 7</option>
           <option value="7-8">Class 7 & 8</option>
@@ -44,17 +44,24 @@
           <option value="10-11">Class 10 & 11</option>
         </select>
 
-        <p>Original Price: <span id="originalPrice"></span></p>
-        <p>Offer Price: <span id="offerPrice"></span></p>
-        <p id="savings"></p>
+        <div class="price-box">
+          <div class="price-row">
+            <span>Original Price</span>
+            <span id="originalPrice"></span>
+          </div>
+          <div class="price-row offer-row">
+            <span>Offer Price</span>
+            <strong id="offerPrice"></strong>
+          </div>
+          <p id="savings" class="savings"></p>
+        </div>
 
-        <button type="submit" id="payButton">
-          Pay Now
+        <button id="payButton" type="submit">
+          Proceed to Secure Payment
         </button>
 
         <p id="status" role="status" aria-live="polite"></p>
       </form>
-
     </section>
 
     <footer>
@@ -66,9 +73,6 @@
       </p>
     </footer>
   </main>
-
-  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-  <script src="./enroll.js"></script>
 </body>
 
 </html>

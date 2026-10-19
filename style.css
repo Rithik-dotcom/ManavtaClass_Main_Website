@@ -36,7 +36,7 @@ body {
     sans-serif;
 
   color: var(--text);
-  background: linear-gradient(135deg, #001F5B 0%, #0052CC 50%, #008CFF 100%);
+  background: #fff;
   line-height: 1.6;
 }
 
@@ -1763,25 +1763,6 @@ button {
 
 
 
-  /* FAQ accordion visibility */
-  .faq-list .faq-answer {
-    display: none;
-  }
-
-  .faq-list .faq-item.active .faq-answer {
-    display: block;
-  }
-
-  .faq-list .faq-question {
-    width: 100%;
-    cursor: pointer;
-    text-align: left;
-  }
-
-  .faq-list .faq-question span {
-    float: right;
-  }
-
 
   .learning-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1993,8 +1974,4 @@ button {
     width: 20px;
     ;
   }
-
-
-
-
 }
