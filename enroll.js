@@ -1,9 +1,9 @@
 const plans = {
-  "6-7": { original: 21999, offer: 14999 },
-  "7-8": { original: 21999, offer: 14999 },
-  "8-9": { original: 23999, offer: 15999 },
-  "9-10": { original: 24999, offer: 17999 },
-  "10-11": { original: 24999, offer: 17999 },
+  "6-7": { original: 21999, offer: 21999 },
+  "7-8": { original: 21999, offer: 21999 },
+  "8-9": { original: 23999, offer: 23999 },
+  "9-10": { original: 24999, offer: 24999 },
+  "10-11": { original: 24999, offer: 24999 },
 };
 
 const form = document.getElementById("enrollmentForm");
